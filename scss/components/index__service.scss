@@ -1,0 +1,98 @@
+.index-service {
+    background: url("../img/index-service_bg.jpg");
+    height: rem(950px);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.index-srvice__block-img {
+    height: rem(300px);
+    width: 50%;
+    float: left;
+    box-shadow: 0 rem(5px) rem(13px) 0 rgba(0, 0, 0, 0.09);
+}
+
+.index-service__block-box {
+    float: left;
+    height: rem(300px);
+    width: 50%;
+    padding: rem(40px) 0 0 rem(65px);
+}
+
+.index-service__block-box__title {
+    margin-bottom: rem(15px);
+    color: $green;
+    padding-left: rem(25px);
+}
+
+.index-service__block-box__text {
+    font-family: HelveticaNeueCyr-Light;
+    line-height: rem(25px);
+    font-size: rem(12px);
+    width: 100%;
+    border-left: rem(3px) solid $green;
+    padding-left: rem(25px);
+    padding-right: rem(25px);
+    margin-bottom: rem(20px);
+    height: rem(135px);
+    overflow: hidden;
+}
+
+.index-service__block-box__text:first-letter {
+    color: $green;
+    font-size: rem(24px);
+}
+
+.left__block {
+    text-align: right;
+    padding: rem(40px) rem(65px) 0 0;
+}
+
+.left__block .index-service__block-box__title {
+    padding: 0 rem(25px) 0 0;
+}
+
+.left__block .index-service__block-box__text {
+    border-right: rem(3px) solid $green;
+    border-left: none;
+    padding: 0 rem(25px) 0 rem(25px);
+    width: 100%;
+    float: right;
+}
+
+.left__block .index-service__block-box__btn {
+    float: left;
+    margin-left: rem(30px);
+}
+
+.hand {
+    background: url("../img/third_bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.derma {
+    background: url("../img/derma.jpg") no-repeat;
+    background-size: cover;
+}
+
+.indi {
+    background: url("../img/indi.jpg") no-repeat;
+    background-size: cover;
+}
+
+.block-box__btn {
+    margin-right: rem(30px);
+    float: right;
+    padding: rem(5px) rem(30px);
+    font-size: rem(14px);
+    font-family: HelveticaNeueCyr;
+    color: $green;
+    border: rem(1px) solid $green;
+    border-radius: rem(10px);
+    background: $white;
+}
+
+.block-box__btn:hover {
+    color: $white;
+    background: $green;
+}

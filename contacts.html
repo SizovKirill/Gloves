@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ПрофПерчатка.ru</title>
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container container__header">
+            <!--header-->
+            <header class="header">
+                <div class="header__block">
+                    <div class="container container-head">
+                        <div class="header__block-left">
+                            <div class="header__block-logo">
+                                <svg class="header__block-logo__img">
+                                    <use xlink:href="./img/icon/sprite.svg#logo"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="header__block-center">
+                            <nav class="header__block-center__menu">
+                                <ul class="header__block-center__menu-list">
+                                    <li class="header__block-center__menu__item">
+                                        <a href="index.html" class="header__block-center__menu-link">
+                                        Главная
+                                    </a>
+                                    </li>
+                                    <li class="header__block-center__menu__item">
+                                        <a href="about.html" class="header__block-center__menu-link">
+                                        О компании
+                                    </a>
+                                    </li>
+                                    <li class="header__block-center__menu__item">
+                                        <a href="product.html" class="header__block-center__menu-link">
+                                        Продукция
+                                    </a>
+
+                                    </li>
+                                    <li class="header__block-center__menu__item">
+                                        <a href="partner.html" class="header__block-center__menu-link">
+                                        Партнерам
+                                    </a>
+                                    </li>
+                                    <li class="header__block-center__menu__item">
+                                        <a href="contacts.html" class="header__block-center__menu-link active">
+                                        Контакты
+                                    </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header__block-right">
+                            <div class="header__block-right__contacts">
+                                <div class="contacts__phone-icon">
+                                    <svg class="contacts__phone-icon__img">
+                                        <use xlink:href="./img/icon/sprite.svg#phone"></use>
+                                    </svg>
+                                </div>
+                                <div class="contacts__phone-number">
+                                    +7 495 599-99-55
+                                </div>
+                            </div>
+                            <div class="header__block-right__schedule">
+                                <div class="header__block-right__schedule-link">
+                                    график работы
+                                </div>
+                                <div class="header__block-right__dropdown">
+                                    <div class="header__block-right__dropdown-time">
+                                        пн-вс: 09:00-20:00
+                                    </div>
+                                    <div class="header__block-right__dropdown-lunch">
+                                        обед: 14:00-14:30
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="header__about-bg">
+                <img class="header__about-bg__img" src="../img/about_bg.jpg" alt="">
+            </div>
+
+            <!--index-->
+            <div class="header__about">
+                <div class="header__about-block">
+                    <div class="header__about-block__left">
+                        <div class="header__about-block__title">
+                            Контакты
+                        </div>
+                        <div class="header__about-block__content">
+                            <div class="footer__block-address">
+                                <div class="footer__block-icon">
+                                    <svg class="footer__block-icon-img">
+                                <use xlink:href="./img/icon/sprite.svg#point"></use>
+                            </svg>
+                                </div>
+                                <div class="footer__block-text">
+                                    142700, Москва, ул. Полбина, 12
+                                </div>
+                            </div>
+                            <div class="footer__block-phone">
+                                <div class="footer__block-phone__icon">
+                                    <svg class="footer__block-icon-img">
+                                <use xlink:href="./img/icon/sprite.svg#phone_footer"></use>
+                            </svg>
+                                </div>
+                                <div class="footer__block-text">
+                                    +7 (495) 599-99-55 (многоканальный)
+                                </div>
+                            </div>
+                            <div class="footer__block-email">
+                                <div class="footer__block-email__icon">
+                                    <svg class="footer__block-icon-img">
+                                <use xlink:href="./img/icon/sprite.svg#mail"></use>
+                            </svg>
+                                </div>
+                                <div class="footer__block-text">
+                                    info@prof-perchatka.ru
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__about-block__right">
+                        <div class="header__about-block__form-title">
+                            <!--мы перезвоним-->
+                        </div>
+
+                        <form class="header__block-form-elem" action="server.php" method="POST" id="index-form">
+                            <div class="header__block-form-row">
+                                <input type="text" placeholder="Ваше имя" name="user-name" id="user-name" class="form__input-text">
+                                <input type="text" placeholder="+7 (___)" name="user-phone" id="user-phone" class="form__input-text">
+                                <textarea placeholder="Удобное время" name="time" id="time" class="form__textarea"></textarea>
+                                <input type="submit" value="Отправить" class="form__submit-botom">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container__map">
+            <div class="map" id="map">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <div class="footer__block-item logo">
+                    <div class="footer__block-item__logo">
+
+                    </div>
+
+                </div>
+                <div class="footer__block-item nav ">
+                    <ul class="footer__block-item__nav-list">
+                        <li class="footer__block-item__nav-item">
+                            <a class="footer__block-item__nav-link" href="about.html">О компании</a>
+                        </li>
+                        <li class="footer__block-item__nav-item">
+                            <a class="footer__block-item__nav-link" href="partner.html">Партнерам</a>
+                        </li>
+                        <li class="footer__block-item__nav-item">
+                            <a class="footer__block-item__nav-link" href="product.html">Каталог</a>
+                        </li>
+                        <!--<li class="footer__block-item__nav-item">
+                            <a class="footer__block-item__nav-link" href="#">Акции</a>
+                        </li>-->
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="footer__block-item nav">
+
+                </div>
+                <div class="footer__block-item contacts">
+                    <div class="footer__block-address">
+                        <div class="footer__block-icon">
+                            <svg class="footer__block-icon-img">
+                                <use xlink:href="./img/icon/sprite.svg#point"></use>
+                            </svg>
+                        </div>
+                        <div class="footer__block-text">
+                            142700, Москва,<br>ул. Полбина, 12
+                        </div>
+                    </div>
+                    <div class="footer__block-phone">
+                        <div class="footer__block-phone__icon">
+                            <svg class="footer__block-icon-img">
+                                <use xlink:href="./img/icon/sprite.svg#phone_footer"></use>
+                            </svg>
+                        </div>
+                        <div class="footer__block-text">
+                            +7 (495) 599-99-55
+                        </div>
+                    </div>
+                    <div class="footer__block-email">
+                        <div class="footer__block-email__icon">
+                            <svg class="footer__block-icon-img">
+                                <use xlink:href="./img/icon/sprite.svg#mail"></use>
+                            </svg>
+                        </div>
+                        <div class="footer__block-text">
+                            info@prof-perchatka.ru
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--script-->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+    </script>
+    <script src="js/map.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

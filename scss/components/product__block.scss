@@ -1,0 +1,13 @@
+    .container__product {
+        position: relative;
+        width: rem(1100px);
+        height: rem(1190px);
+        background: url("../img/index-service_bg.jpg");
+    }
+    
+    .product-block {
+        display: flex;
+        position: absolute;
+        top: rem(20px);
+        left: rem(20px);
+    }

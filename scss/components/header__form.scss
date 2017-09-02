@@ -1,0 +1,71 @@
+.header__index-block__form {
+    width: 30%;
+    margin-left: 10%;
+    margin-top: rem(20px);
+}
+
+.form__input-text,
+.form__textarea,
+.form__submit-botom {
+    font-size: rem(16px);
+    border: rem(1px) solid $white;
+    border-radius: rem(5px);
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: rem(1px) rem(2px) rem(5.7px) rem(0.3px) rgba(0, 0, 0, 0.26);
+    width: rem(230px);
+    height: rem(40px);
+    margin-bottom: rem(10px);
+    padding-left: rem(10px);
+    transition: .5s;
+}
+
+.form__submit-botom {
+    color: $white;
+}
+
+.form__input-text {
+    &:hover {
+        border-color: $green;
+        background: $white;
+        outline: none;
+    }
+}
+
+.header__block-form-row input:focus {
+    outline: none;
+    background: $white;
+}
+
+.form__textarea {
+    resize: none;
+    padding-top: rem(10px);
+    &:hover {
+        border-color: $green;
+        background: $white;
+        outline: none;
+    }
+}
+
+.form__textarea:focus {
+    outline: none;
+    background: $white;
+}
+
+.form__submit-botom:hover {
+    background: rgba(51, 153, 204, 0.8);
+    color: $white;
+    border-color: rem(2px) solid $white;
+}
+
+.header__block-form-elem {
+    width: rem(230px);
+}
+
+.header__block-form-elem input[type="text"]::-webkit-input-placeholder {
+    color: $white;
+    padding-top: rem(3px);
+}
+
+.header__block-form-elem textarea::-webkit-input-placeholder {
+    color: $white;
+}

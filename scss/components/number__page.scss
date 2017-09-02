@@ -1,0 +1,26 @@
+.catalog__number-page {
+    width: rem(710px);
+}
+
+.catalog__number-page__list {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.catalog__number-page__item {}
+
+.catalog__number-page__link {
+    text-decoration: none;
+    padding: rem(5px) rem(10px);
+    color: $grey;
+    font-family: HelveticaNeueCyr-Medium;
+    font-size: rem(18px);
+}
+
+.page-active {
+    background: $green;
+    border-radius: rem(5px);
+    color: $white;
+}
