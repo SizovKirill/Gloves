@@ -16,11 +16,14 @@
 }
 
 .index-about__block-left {
-    width: 60%;
+    width: 80%;
     float: left;
     color: #fff;
     font-family: HelveticaNeueCyr-Light;
     padding: rem(10px) 0 0 rem(60px);
+    @include tablets {
+        padding-left: 50px;
+    }
 }
 
 .index-about__block-title {
@@ -36,6 +39,11 @@
     overflow-y: scroll;
     margin-bottom: rem(15px);
     padding-right: rem(20px);
+    @include tablets {
+        width: 100%;
+        height: 100%;
+        overflow-y: initial;
+    }
 }
 
 .block-button {
@@ -60,5 +68,10 @@
     height: rem(205px);
     background: url("../img/about_img.jpg") no-repeat;
     background-size: cover;
-    margin: rem(-35px) rem(70px);
+    position: absolute;
+    top: -25px;
+    right: 50px;
+    @include tablets {
+        display: none;
+    }
 }
