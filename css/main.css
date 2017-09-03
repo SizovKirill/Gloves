@@ -382,15 +382,36 @@ button {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  @media screen and (max-width: 768px) {
+    .header__index {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .header__index-block-title {
   width: 60%;
   position: relative;
-  float: left;
   color: #4693cf;
   padding: 1.25rem 2.5rem;
   background: rgba(253, 253, 254, 0.4); }
+  @media screen and (max-width: 768px) {
+    .header__index-block-title {
+      width: 100%;
+      height: 7.5rem;
+      padding: initial;
+      text-align: center; } }
 
 .span-title {
   text-transform: uppercase;
@@ -400,6 +421,11 @@ button {
   top: -0.625rem;
   left: 22.8125rem;
   font-family: HelveticaNeueCyr-Thin; }
+  @media screen and (max-width: 768px) {
+    .span-title {
+      position: absolute;
+      left: 34.375rem;
+      top: 3.125rem; } }
 
 .header__index-block-text {
   font-size: 0.875rem;
@@ -410,11 +436,18 @@ button {
   .header__index-block-text:first-letter {
     color: #4693cf;
     font-size: 1.5rem; }
+  @media screen and (max-width: 768px) {
+    .header__index-block-text {
+      display: none; } }
 
 .header__index-block__form {
   width: 30%;
   margin-left: 10%;
   margin-top: 1.25rem; }
+  @media screen and (max-width: 768px) {
+    .header__index-block__form {
+      margin-left: initial;
+      width: 14.375rem; } }
 
 .form__input-text,
 .form__textarea,
@@ -477,7 +510,8 @@ button {
   text-transform: uppercase;
   color: #58595b;
   padding-left: 1.875rem;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem; }
 
 .index-sale {
   max-width: 68.75rem;
@@ -498,6 +532,12 @@ button {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around; }
+  @media screen and (max-width: 768px) {
+    .index-sale__block-list {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .index-sale__block {
   width: 18.75rem;
@@ -505,16 +545,25 @@ button {
   margin-right: 1.5625rem;
   position: relative;
   overflow: hidden; }
+  .index-sale__block:last-child {
+    margin-right: initial; }
+  @media screen and (max-width: 768px) {
+    .index-sale__block {
+      margin-right: initial;
+      margin-bottom: 0.625rem;
+      width: 12.5rem;
+      height: 8.4375rem; } }
 
 .index-sale__block:hover .sale-block {
   display: block; }
 
 .sale-block {
+  height: 100%;
+  width: 100%;
   background-color: rgba(53, 53, 53, 0.48);
   position: absolute;
   top: 0;
   text-align: center;
-  display: none;
   -webkit-transition: 1.5s;
   -o-transition: 1.5s;
   transition: 1.5s; }
@@ -522,12 +571,20 @@ button {
 .sale-block__sale {
   font-size: 3.125rem;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  padding-top: 0.625rem; }
+  @media screen and (max-width: 768px) {
+    .sale-block__sale {
+      padding-top: 0.9375rem;
+      font-size: 1.5rem; } }
 
 .sale-block__text {
   font-size: 0.9375rem;
   color: #fff;
   margin-bottom: 0.9375rem; }
+  @media screen and (max-width: 768px) {
+    .sale-block__text {
+      font-size: 0.625rem; } }
 
 .first-img,
 .second-img,
@@ -671,11 +728,14 @@ button {
   position: absolute; }
 
 .index-about__block-left {
-  width: 60%;
+  width: 80%;
   float: left;
   color: #fff;
   font-family: HelveticaNeueCyr-Light;
   padding: 0.625rem 0 0 3.75rem; }
+  @media screen and (max-width: 768px) {
+    .index-about__block-left {
+      padding-left: 50px; } }
 
 .index-about__block-title {
   font-size: 1.875rem;
@@ -689,6 +749,11 @@ button {
   overflow-y: scroll;
   margin-bottom: 0.9375rem;
   padding-right: 1.25rem; }
+  @media screen and (max-width: 768px) {
+    .index-about__block-text {
+      width: 100%;
+      height: 100%;
+      overflow-y: initial; } }
 
 .block-button {
   margin-right: 1.875rem;
@@ -710,11 +775,16 @@ button {
   height: 12.8125rem;
   background: url("../img/about_img.jpg") no-repeat;
   background-size: cover;
-  margin: -2.1875rem 4.375rem; }
+  position: absolute;
+  top: -25px;
+  right: 50px; }
+  @media screen and (max-width: 768px) {
+    .index-about__block-img {
+      display: none; } }
 
 .map {
   margin-top: 1.25rem;
-  width: 68.75rem;
+  width: 100%;
   height: 25rem; }
 
 .product-category {

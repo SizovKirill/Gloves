@@ -2,6 +2,10 @@
     width: 30%;
     margin-left: 10%;
     margin-top: rem(20px);
+    @include tablets {
+        margin-left: initial;
+        width: rem(230px);
+    }
 }
 
 .form__input-text,
