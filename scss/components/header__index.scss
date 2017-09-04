@@ -4,15 +4,25 @@
     margin: 0 auto;
     z-index: 1000;
     display: flex;
+    flex-direction: row;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .header__index-block-title {
     width: 60%;
     position: relative;
-    float: left;
     color: $blue;
     padding: rem(20px) rem(40px);
     background: rgba(253, 253, 254, 0.4);
+    @include tablets {
+        width: 100%;
+        height: rem(120px);
+        padding: initial;
+        text-align: center;
+    }
 }
 
 .span-title {
@@ -23,6 +33,14 @@
     top: rem(-10px);
     left: rem(365px);
     font-family: HelveticaNeueCyr-Thin;
+    @include tablets {
+        position: absolute;
+        left: rem(550px);
+        top: rem(50px);
+    }
+    @include phones {
+        left: rem(280px);
+    }
 }
 
 .header__index-block-text {
@@ -34,5 +52,8 @@
     &:first-letter {
         color: $blue;
         font-size: rem(24px);
+    }
+    @include tablets {
+        display: none;
     }
 }

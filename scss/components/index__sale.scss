@@ -1,62 +1,86 @@
-            .title-block {
-                border-left: rem(3px) solid $green;
-                text-transform: uppercase;
-                color: $grey;
-                padding-left: rem(30px);
-                font-size: rem(24px);
-            }
-            
-            .index-sale {
-                max-width: rem(1100px);
-                margin: 0 auto;
-                padding: rem(20px);
-                margin-bottom: rem(30px);
-            }
-            
-            .index-sale__block-list {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-            }
-            
-            .index-sale__block {
-                width: rem(300px);
-                height: rem(185px);
-                margin-right: rem(25px);
-                position: relative;
-                overflow: hidden;
-            }
-            
-            .index-sale__block:hover .sale-block {
-                display: block;
-            }
-            
-            .sale-block {
-                // height: 100%;
-                width: 100%;
-                background-color: rgba(53, 53, 53, 0.48);
-                position: absolute;
-                top: 0;
-                text-align: center;
-                // padding: rem(25px) rem(15px);
-                display: none;
-                transition: 1.5s;
-            }
-            
-            .sale-block__sale {
-                font-size: rem(50px);
-                color: $white;
-                text-align: center;
-            }
-            
-            .sale-block__text {
-                font-size: rem(15px);
-                color: $white;
-                margin-bottom: rem(15px);
-            }
-            
-            .first-img,
-            .second-img,
-            .third-img {
-                width: 100%;
-            }
+.title-block {
+    border-left: rem(3px) solid $green;
+    text-transform: uppercase;
+    color: $grey;
+    padding-left: rem(30px);
+    font-size: rem(24px);
+    margin-bottom: rem(20px);
+}
+
+.index-sale {
+    max-width: rem(1100px);
+    margin: 0 auto;
+    padding: rem(20px);
+    margin-bottom: rem(30px);
+}
+
+.index-sale__block-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @include tablets {
+        align-items: center;
+    }
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.index-sale__block {
+    width: rem(300px);
+    height: rem(185px);
+    margin-right: rem(25px);
+    position: relative;
+    overflow: hidden;
+    &:last-child {
+        margin-right: initial;
+    }
+    @include tablets {
+        margin-right: initial;
+        margin-bottom: rem(10px);
+        width: rem(200px);
+        height: rem(135px);
+    }
+}
+
+.index-sale__block:hover .sale-block {
+    display: block;
+}
+
+.sale-block {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(53, 53, 53, 0.48);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    display: none;
+    transition: 1.5s;
+    @include phones {}
+}
+
+.sale-block__sale {
+    font-size: rem(50px);
+    color: $white;
+    text-align: center;
+    padding-top: rem(10px);
+    @include tablets {
+        padding-top: rem(15px);
+        font-size: rem(24px);
+    }
+}
+
+.sale-block__text {
+    font-size: rem(15px);
+    color: $white;
+    margin-bottom: rem(15px);
+    @include tablets {
+        font-size: rem(10px);
+    }
+}
+
+.first-img,
+.second-img,
+.third-img {
+    width: 100%;
+}

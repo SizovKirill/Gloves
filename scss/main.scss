@@ -12,6 +12,7 @@ $phones: 480px;
 @import "layout/fonts";
 @import "layout/scroll";
 // /*components*/
+@import "components/hamburger__menu";
 @import "components/header";
 @import "components/about__header";
 @import "components/content__about";
@@ -29,4 +30,5 @@ $phones: 480px;
 @import "components/catalog";
 @import "components/breadcrumb";
 @import "components/number__page";
+@import "components/menu_mobile";
 @import "components/footer";

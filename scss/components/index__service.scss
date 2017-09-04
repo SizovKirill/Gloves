@@ -3,6 +3,14 @@
     height: rem(950px);
     width: 100%;
     margin: 0 auto;
+    @include phones {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: rem(20px) 0;
+    }
 }
 
 .index-srvice__block-img {
@@ -10,6 +18,9 @@
     width: 50%;
     float: left;
     box-shadow: 0 rem(5px) rem(13px) 0 rgba(0, 0, 0, 0.09);
+    @include phones {
+        display: none;
+    }
 }
 
 .index-service__block-box {
@@ -17,6 +28,15 @@
     height: rem(300px);
     width: 50%;
     padding: rem(40px) 0 0 rem(65px);
+    @include phones {
+        height: 100%;
+        width: 100%;
+        float: initial;
+        display: flex;
+        flex-direction: column;
+        padding: initial;
+        margin-bottom: rem(15px);
+    }
 }
 
 .index-service__block-box__title {
@@ -36,6 +56,11 @@
     margin-bottom: rem(20px);
     height: rem(135px);
     overflow: hidden;
+    // @include phones {
+    //     &:last-child {
+    //         margin-bottom: initial;
+    //     }
+    // }
 }
 
 .index-service__block-box__text:first-letter {
@@ -46,6 +71,9 @@
 .left__block {
     text-align: right;
     padding: rem(40px) rem(65px) 0 0;
+    @include phones {
+        padding: initial;
+    }
 }
 
 .left__block .index-service__block-box__title {
@@ -90,6 +118,12 @@
     border: rem(1px) solid $green;
     border-radius: rem(10px);
     background: $white;
+}
+
+.btn-derma {
+    @include phones {
+        margin-right: 63%;
+    }
 }
 
 .block-box__btn:hover {
