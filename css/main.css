@@ -31,10 +31,9 @@ body {
   min-height: 100%;
   overflow: hidden; }
 
-.wrapper:after {
-  content: "";
-  display: block;
-  height: 4.8125rem; }
+.maincontent {
+  height: 100%;
+  position: relative; }
 
 .container {
   position: relative;
@@ -1350,6 +1349,102 @@ button {
   color: #fff;
   font-family: helveticaNeueCyr-medium;
   font-size: 0.625rem; }
+
+.screen-menu {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(47, 50, 52, 0.9);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  display: none; }
+
+.screen-menu__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.screen-menu__item:after {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 0.4375rem;
+  height: 0.4375rem;
+  border-radius: 50%;
+  margin: 0.9375rem auto; }
+
+.screen-menu__item:last-child:after {
+  display: none; }
+
+.screen-menu__item-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.5rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .screen-menu__item-link:hover {
+    color: #33cc33; }
+
+.screen-menu__logo-img {
+  width: 7.5rem;
+  height: 7.5rem;
+  margin: 0.625rem; }
+
+.screen-menu__btn {
+  width: 26px;
+  height: 26px; }
+
+.screen-menu__btn-exit {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: block; }
+  .screen-menu__btn-exit:after {
+    content: " ";
+    display: block;
+    width: 26px;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .screen-menu__btn-exit:before {
+    content: " ";
+    display: block;
+    width: 26px;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
 
 .footer__block {
   max-width: 68.75rem;
