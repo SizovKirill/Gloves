@@ -1,5 +1,13 @@
 .product-block__sidebar {
+    width: 25%;
+    height: 100%;
+    margin-right: 5%;
     margin-top: rem(50px);
+    @include tablets {
+        width: 100%;
+        margin-bottom: rem(30px);
+        margin-top: rem(20px);
+    }
 }
 
 .sidebar__item-link {
@@ -15,11 +23,18 @@
     flex-direction: row;
     align-items: center;
     height: rem(40px);
-    margin-right: rem(50px);
+    // margin-right: rem(50px);
     width: rem(220px);
     border-bottom: rem(2px) solid $blue;
-    vertical-align: midle;
-    margin-left: rem(40px);
+    // vertical-align: midle;
+    // margin-left: rem(40px);
+    @include tablets {
+        width: 60%;
+        margin: 0 auto;
+    }
+    @include phones {
+        width: 80%;
+    }
 }
 
 .sidebar__item:hover {
@@ -28,10 +43,20 @@
 
 .sidebar__item:hover .sidebar__item-icon {
     display: flex;
+    @include tablets {
+        display: none;
+    }
 }
 
 .sidebar__item-text {
     width: rem(185px);
+    margin-left: rem(10px);
+    @include tablets {
+        width: 85%;
+        &:hover {
+            color: $green;
+        }
+    }
 }
 
 .sidebar__item-icon {

@@ -1,0 +1,63 @@
+.menu-mobile {
+    width: rem(600px);
+    height: rem(300px);
+    background-color: $white;
+    position: absolute;
+    top: rem(200px);
+    left: 25%;
+    padding-top: rem(10px);
+    display: none;
+}
+
+.menu-mobile__block {
+    display: flex;
+    flex-direction: row;
+    height: rem(180px);
+}
+
+.menu-mobile__block-img {
+    background-image: url("../img/catalog/hb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+}
+
+.menu-mobile__block-desc__title {
+    color: $blue;
+    font-family: helveticaNeueCyr-Light;
+    font-size: rem(16px);
+}
+
+.menu-mobile__block-img {
+    width: 35%;
+    height: 100%;
+}
+
+.menu-mobile__block-desc {
+    width: 65%;
+}
+
+.menu-mobile__block-desc__text {
+    font-size: rem(10px);
+}
+
+.menu-mobile__block-price {
+    color: $blue;
+    font-family: helveticaNeueCyr-medium;
+    font-size: rem(16px);
+    text-align: right;
+}
+
+.menu-mobile__block-description {
+    color: $blue;
+    font-family: helveticaNeueCyr-Light;
+    font-size: rem(16px);
+}
+
+.menu-mobile__block-desvription__text {
+    height: rem(67px);
+    background-color: $blue;
+    color: $white;
+    font-family: helveticaNeueCyr-medium;
+    font-size: rem(10px);
+}

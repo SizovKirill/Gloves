@@ -1,5 +1,5 @@
 .product-category {
-    max-width: rem(1100px);
+    width: 100%;
     margin: 0 auto;
     padding: rem(20px);
 }
@@ -8,8 +8,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // padding: rem(30px) rem(50px);
-    // font-size: 0;
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: rem(5px);
+    }
 }
 
 .product-category__block {
@@ -18,6 +21,16 @@
     margin-right: rem(25px);
     position: relative;
     overflow: hidden;
+    @include tablets {
+        width: rem(200px);
+        height: rem(135px);
+    }
+    @include phones {
+        margin-right: initial;
+    }
+    &:last-child {
+        margin-right: initial;
+    }
 }
 
 .product-category__block:hover .product-category__sale-block {
@@ -36,12 +49,18 @@
     padding: rem(25px) rem(15px) 0;
     display: none;
     transition: 1.5s;
+    @include tablets {
+        padding: rem(10px) rem(10px);
+    }
 }
 
 .product-category__sale-block__icon {
     width: rem(50px);
     height: rem(50px);
     margin-bottom: rem(20px);
+    @include tablets {
+        margin-bottom: rem(10px);
+    }
 }
 
 .product-category__sale-block__icon-img {
@@ -50,11 +69,15 @@
 }
 
 .product-category__sale-block__sale {
-    font-size: rem(15px);
+    font-size: rem(14px);
     color: $white;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: rem(20px);
+    @include tablets {
+        font-size: rem(10px);
+        margin-bottom: rem(10px);
+    }
 }
 
 .product-category__sale-block__text {
@@ -68,6 +91,9 @@
     bottom: rem(15px);
     width: rem(55px);
     height: rem(20px);
+    @include tablets {
+        bottom: rem(5px);
+    }
 }
 
 .product-category__sale-block__arrow-img {

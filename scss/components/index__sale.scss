@@ -21,6 +21,9 @@
     @include tablets {
         align-items: center;
     }
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .index-sale__block {
@@ -51,9 +54,9 @@
     position: absolute;
     top: 0;
     text-align: center;
-    // display: none;
+    display: none;
     transition: 1.5s;
-    @include tablets {}
+    @include phones {}
 }
 
 .sale-block__sale {

@@ -38,6 +38,9 @@
         left: rem(550px);
         top: rem(50px);
     }
+    @include phones {
+        left: rem(280px);
+    }
 }
 
 .header__index-block-text {

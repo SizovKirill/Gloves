@@ -1,5 +1,5 @@
 .header__about-bg {
-    width: rem(1100px);
+    width: 100%;
     height: rem(500px);
     overflow: hidden;
     position: absolute;
@@ -10,16 +10,26 @@
     width: 100%;
     background-size: cover;
     position: relative;
+    @include phones {
+        height: 100%;
+    }
 }
 
 .header__about-block {
     display: flex;
     position: relative;
-    width: rem(1000px);
-    min-height: rem(350px);
+    flex-direction: row;
+    width: 100%;
+    min-height: 100%;
     margin: 0 auto;
     background-color: rgba(53, 53, 53, 0.48);
     padding: rem(25px);
+    @include tablets {
+        padding: rem(15px) rem(15px) 0;
+    }
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .header__about-block__title {
@@ -37,6 +47,10 @@
 
 .header__about-block__left {
     width: 60%;
+    @include phones {
+        width: 100%;
+        margin-bottom: rem(15px);
+    }
 }
 
 .header__about-block__right {
@@ -44,12 +58,18 @@
     flex-direction: column;
     align-items: center;
     width: 40%;
+    @include phones {
+        width: 100%;
+    }
 }
 
 .header__about-block__text {
     font-family: HelveticaNeueCyr-Light;
     font-size: rem(16px);
     color: $white;
+    @include tablets {
+        font-size: rem(14px);
+    }
 }
 
 .header__about-block__form-title {

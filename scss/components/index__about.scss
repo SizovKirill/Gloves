@@ -13,6 +13,10 @@
     height: rem(275px);
     background: rgba(53, 53, 53, 0.48);
     position: absolute;
+    @include phones {
+        height: rem(330px);
+        top: 13%;
+    }
 }
 
 .index-about__block-left {
@@ -23,6 +27,13 @@
     padding: rem(10px) 0 0 rem(60px);
     @include tablets {
         padding-left: 50px;
+    }
+    @include phones {
+        width: 90%;
+        padding: initial;
+        display: flex;
+        flex-direction: column;
+        margin: 0 5%;
     }
 }
 

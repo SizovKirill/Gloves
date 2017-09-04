@@ -1,3 +1,11 @@
+.product-block__catalog {
+    width: 75%;
+    height: 100%;
+    @include tablets {
+        width: 100%;
+    }
+}
+
 .catalog__title-category {
     font-size: rem(24px);
     text-transform: uppercase;
@@ -5,12 +13,16 @@
     margin-bottom: rem(30px);
     padding-left: rem(20px);
     border-left: rem(3px) solid $green;
+    @include tablets {
+        display: none;
+    }
 }
 
 .catalog-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-bottom: rem(20px);
 }
 
@@ -20,8 +32,10 @@
     height: rem(300px);
     background-color: $white;
     padding: rem(13px);
-    margin-right: rem(25px);
     margin-bottom: rem(25px);
+    &:hover {
+        border: 1px solid $green;
+    }
 }
 
 .catalog-item__link {
