@@ -1,7 +1,20 @@
 // console.log('in common.js');
 // console.log($);
 
+// screen__menu
+$(() => {
+    const hamburger = $('.hamburger-menu__block');
+    const fullScreenMenu = $('.screen-menu');
+    const fullScreenMenuCloser = fullScreenMenu.find('.screen-menu__btn-exit');
 
+    hamburger.on('click', () => {
+        fullScreenMenu.fadeIn(300);
+    });
+    fullScreenMenuCloser.on('click', (evt) => {
+        evt.preventDefault();
+        fullScreenMenu.fadeOut(300);
+    });
+});
 
 // form__ajax
 var submitForm = function(ev) {

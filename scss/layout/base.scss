@@ -36,12 +36,16 @@ body {
     overflow: hidden;
 }
 
-.wrapper:after {
-    content: "";
-    display: block;
-    height: rem(77px);
+.maincontent {
+    height: 100%;
+    position: relative;
 }
 
+// .wrapper:after {
+//     content: "";
+//     display: block;
+//     height: rem(77px);
+// }
 .container {
     position: relative;
     width: 95%;
