@@ -135,7 +135,8 @@
     height: 100%;
 }
 
-.contacts__phone-number {
+.contacts__phone-number__link {
+    text-decoration: none;
     color: $white;
     font-family: HelveticaNeueCyr-Light;
     font-size: rem(20px);

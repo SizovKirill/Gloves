@@ -66,6 +66,7 @@ h1 {
 }
 
 button {
+    cursor: pointer;
     width: rem(145px);
     height: rem(30px);
     border: rem(1px) solid $green;

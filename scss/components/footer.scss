@@ -3,6 +3,10 @@
     height: rem(285px);
     background: url("../img/footer_bg.jpg") no-repeat;
     padding: rem(30px);
+    @include tablets {
+        height: rem(250px);
+        padding: rem(15px);
+    }
     @include phones {
         padding: initial;
         height: rem(200px);
@@ -14,6 +18,9 @@
     height: 100%;
     margin-right: 5%;
     float: left;
+    @include tablets {
+        width: 35%;
+    }
     @include phones {
         width: 40%;
         margin-right: initial;
@@ -55,6 +62,9 @@
 }
 
 .logo {
+    @include tablets {
+        width: 20%;
+    }
     @include phones {
         display: none;
     }
@@ -63,6 +73,10 @@
 .footer__block-item__logo {
     width: rem(160px);
     height: rem(225px);
+    @include tablets {
+        width: rem(120px);
+        height: rem(120px);
+    }
 }
 
 .footer__block-logo-img {
@@ -77,6 +91,17 @@
 }
 
 .footer__block-address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: rem(20px) 0 rem(15px);
+}
+
+.footer__block-text__link {
+    color: $white;
+    font-size: rem(16px);
+    font-family: HelveticaNeueCyr-Light;
+    text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: center;

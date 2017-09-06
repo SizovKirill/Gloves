@@ -28,6 +28,9 @@
     height: rem(300px);
     width: 50%;
     padding: rem(40px) 0 0 rem(65px);
+    @include tablets {
+        padding: rem(20px) 0 0 rem(30px);
+    }
     @include phones {
         height: 100%;
         width: 100%;
@@ -56,11 +59,6 @@
     margin-bottom: rem(20px);
     height: rem(135px);
     overflow: hidden;
-    // @include phones {
-    //     &:last-child {
-    //         margin-bottom: initial;
-    //     }
-    // }
 }
 
 .index-service__block-box__text:first-letter {
@@ -71,6 +69,9 @@
 .left__block {
     text-align: right;
     padding: rem(40px) rem(65px) 0 0;
+    @include tablets {
+        padding: rem(20px) rem(30px) 0 0;
+    }
     @include phones {
         padding: initial;
     }
@@ -118,6 +119,7 @@
     border: rem(1px) solid $green;
     border-radius: rem(10px);
     background: $white;
+    cursor: pointer;
 }
 
 .btn-derma {

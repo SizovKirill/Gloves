@@ -38,8 +38,13 @@
 }
 
 .index-about__block-title {
-    font-size: rem(30px);
+    font-family: HelveticaNeueCyr-Medium;
+    text-transform: uppercase;
+    font-size: rem(24px);
     margin-bottom: rem(20px);
+    color: $white;
+    padding-left: 1.875rem;
+    border-left: 0.1875rem solid rgb(51, 204, 51);
 }
 
 .index-about__block-text {
@@ -58,6 +63,7 @@
 }
 
 .block-button {
+    text-decoration: none;
     margin-right: rem(30px);
     float: left;
     padding: rem(5px) rem(30px);
@@ -71,7 +77,6 @@
 .index-about__block-right {
     width: 40%;
     height: 100%;
-    float: right;
 }
 
 .index-about__block-img {
