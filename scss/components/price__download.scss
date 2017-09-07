@@ -2,12 +2,12 @@
     position: fixed;
     width: rem(60px);
     height: rem(60px);
-    background: rgba(253, 253, 254, 0.4);
+    background: rgba(0, 102, 153, 0.8);
     border-radius: 20%;
     top: rem(150px);
     right: rem(150px);
     padding: rem(3px);
-    z-index: 99999;
+    z-index: 1999;
     @include tablets {
         right: rem(15px);
     }
@@ -19,7 +19,7 @@
     align-items: center;
     text-decoration: none;
     font-family: helveticaneuecyr-medium;
-    color: $blue;
+    color: $white;
     font-size: rem(12px);
 }
 

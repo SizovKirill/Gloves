@@ -29,7 +29,7 @@
 .index-sale__block {
     width: rem(300px);
     height: rem(185px);
-    margin-right: rem(25px);
+    // margin-right: rem(25px);
     position: relative;
     overflow: hidden;
     &:last-child {
@@ -41,9 +41,14 @@
         width: rem(200px);
         height: rem(135px);
     }
+    @include phones {
+        width: rem(110px);
+        height: rem(77.5px);
+    }
 }
 
 .index-sale__block:hover .sale-block {
+    transition: 5s;
     display: block;
 }
 
@@ -55,7 +60,6 @@
     top: 0;
     text-align: center;
     display: none;
-    transition: 1.5s;
     @include phones {}
 }
 
@@ -95,6 +99,7 @@
     border-radius: rem(10px);
     background: $white;
     cursor: pointer;
+    transition: .5s;
     &:hover {
         color: $white;
         background: $green;
