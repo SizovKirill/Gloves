@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="favicon.iso" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="scripts/remodal/remodal.css">
+    <link rel="stylesheet" href="scripts/remodal/remodal-default-theme.css">
 
 
 </head>
@@ -515,7 +517,7 @@
                         </div>
                         <div class="index-sale__block-list">
                             <div class="index-sale__block first">
-                                <img class="first-img" src="./img/first_bg.jpg" alt="">
+                                <img class="first-img" src="./img/first_bg.jpg">
                                 <div class="sale-block">
                                     <div class="sale-block__sale">
                                         -20%
@@ -523,11 +525,11 @@
                                     <div class="sale-block__text">
                                         при заказе от 30 000 руб.
                                     </div>
-                                    <button type="">Подробнее...</button>
+                                    <a href="#sale_first" type="" class="mod-button">Подробнее ...</a>
                                 </div>
                             </div>
                             <div class="index-sale__block second">
-                                <img class="second-img" src="./img/third_bg.jpg" alt="">
+                                <img class="second-img" src="./img/third_bg.jpg">
                                 <div class="sale-block">
                                     <div class="sale-block__sale">
                                         -10%
@@ -535,11 +537,11 @@
                                     <div class="sale-block__text">
                                         при заказе 100 пар ПВХ
                                     </div>
-                                    <button type="">Подробнее...</button>
+                                    <a href="#sale_second" type="" class="mod-button">Подробнее ...</a>
                                 </div>
                             </div>
                             <div class="index-sale__block third">
-                                <img class="third-img" src="./img/second_bg.jpg" alt="">
+                                <img class="third-img" src="./img/second_bg.jpg">
                                 <div class="sale-block">
                                     <div class="sale-block__sale">
                                         -100%
@@ -547,8 +549,69 @@
                                     <div class="sale-block__text">
                                         Бесплатная доставка
                                     </div>
-                                    <button type="">Подробнее...</button>
+                                    <a href="#sale_third" type="" class="mod-button">Подробнее ...</a>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal_1-->
+                    <div class="index-sale__modal remodal" data-remodal-id="sale_first">
+                        <div class=" modal__block ">
+                            <div class="modal__block-icon ">
+                                <img class="modal__block-icon__img " src="./img/first_bg.jpg ">
+                            </div>
+                            <div class="modal__block-description ">
+                                <div class="modal__block-title ">
+                                    Скидка -20% при заказе от 30 000 руб.
+                                </div>
+                                <div class="modal__block-text ">
+                                    До 1-го октября 2017 при заказе любой продукции от 30 000 рублей скидка на весь заказ 20%. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus repellendus omnis voluptates quas natus necessitatibus voluptatem dolorum? Accusantium odit
+                                    ducimus perferendis optio consectetur nihil excepturi unde quas aperiam minima dicta, blanditiis eveniet quae suscipit eius voluptatibus consequatur dolor deleniti. Autem!
+                                </div>
+                            </div>
+                            <div class="modal__block-button " id="exit ">
+                                <a href="#" class="modal__block-button__exit "></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal_2 -->
+                    <div class="index-sale__modal remodal" data-remodal-id="sale_second">
+                        <div class="modal__block ">
+                            <div class="modal__block-icon ">
+                                <img class="modal__block-icon__img " src="./img/third_bg.jpg">
+                            </div>
+                            <div class="modal__block-description ">
+                                <div class="modal__block-title ">
+                                    Скидка -10% при заказе 100 пар ПВХ
+                                </div>
+                                <div class="modal__block-text ">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus odit, iusto alias quas natus provident rerum ut delectus aperiam. Doloribus explicabo, ex quisquam molestiae quae beatae nostrum ut nemo? Voluptas, qui nesciunt! Natus nobis magnam explicabo
+                                    deleniti aliquid. Ullam, et. Magni, ipsa repellendus! Porro, odit. Mollitia iure nemo vel quisquam odio ipsam. Harum ipsam odit aliquam corrupti, neque quam cumque?
+                                </div>
+                            </div>
+                            <div class="modal__block-button " id="exit ">
+                                <a href="# " class="modal__block-button__exit "></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal_3 -->
+                    <div class="index-sale__modal remodal" data-remodal-id="sale_third">
+                        <div class="modal__block ">
+                            <div class="modal__block-icon ">
+                                <img class="modal__block-icon__img " src="./img/second_bg.jpg">
+                            </div>
+                            <div class="modal__block-description ">
+                                <div class="modal__block-title ">
+                                    Бесплатная доставка
+                                </div>
+                                <div class="modal__block-text ">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus odit, iusto alias quas natus provident rerum ut delectus aperiam. Doloribus explicabo, ex quisquam molestiae quae beatae nostrum ut nemo? Voluptas, qui nesciunt! Natus nobis magnam explicabo
+                                    deleniti aliquid. Ullam, et. Magni, ipsa repellendus! Porro, odit. Mollitia iure nemo vel quisquam odio ipsam. Harum ipsam odit aliquam corrupti, neque quam cumque?
+                                </div>
+                            </div>
+                            <div class="modal__block-button " id="exit">
+                                <a href="#" class="modal__block-button__exit"></a>
                             </div>
                         </div>
                     </div>
@@ -706,6 +769,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
     </script>
     <script src="js/common.js"></script>
+    <script src="scripts/remodal/remodal.min.js "></script>
 
 </body>
 

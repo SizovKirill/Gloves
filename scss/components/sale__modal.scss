@@ -1,0 +1,94 @@
+.index-sale__modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 50, 52, 0.9);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: rem(15px);
+    display: none;
+}
+
+.modal__block {
+    display: flex;
+    flex-direction: row;
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.modal__block-icon {
+    width: 30%;
+    height: 100%;
+    padding-right: 4%;
+    @include phones {
+        width: 85%;
+        margin-top: rem(20px);
+        margin-bottom: rem(20px);
+    }
+}
+
+.modal__block-icon__img {
+    width: 100%;
+}
+
+.modal__block-description {
+    width: 66%;
+    height: 100%;
+    font-family: HelveticaNeueCyr-Light;
+    @include phones {
+        width: 90%;
+    }
+}
+
+.modal__block-title {
+    color: $blue;
+    font-size: rem(24px);
+    margin-bottom: rem(15px);
+}
+
+.modal__block-text {
+    color: $white;
+    font-size: rem(16px);
+}
+
+.modal__block-button {
+    width: rem(26px);
+    height: rem(26px);
+}
+
+.modal__block-button__exit {
+    width: rem(26px);
+    height: rem(26px);
+    position: absolute;
+    top: rem(30px);
+    right: rem(30px);
+    display: block;
+    &:after {
+        content: " ";
+        display: block;
+        width: rem(26px);
+        height: 5px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background-color: $white;
+        border-radius: rem(5px);
+        transform: rotate(-45deg);
+    }
+    &:before {
+        content: " ";
+        display: block;
+        width: rem(26px);
+        height: rem(5px);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background-color: $white;
+        border-radius: rem(5px);
+        transform: rotate(45deg);
+    }
+}

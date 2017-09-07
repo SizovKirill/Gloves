@@ -84,3 +84,19 @@
 .third-img {
     width: 100%;
 }
+
+.mod-button {
+    text-decoration: none;
+    padding: rem(5px) rem(30px);
+    font-size: rem(14px);
+    font-family: HelveticaNeueCyr;
+    color: $green;
+    border: rem(1px) solid $green;
+    border-radius: rem(10px);
+    background: $white;
+    cursor: pointer;
+    &:hover {
+        color: $white;
+        background: $green;
+    }
+}
