@@ -641,7 +641,6 @@ button {
 .index-sale__block {
   width: 18.75rem;
   height: 11.5625rem;
-  margin-right: 1.5625rem;
   position: relative;
   overflow: hidden; }
   .index-sale__block:last-child {
@@ -652,8 +651,15 @@ button {
       margin-bottom: 0.625rem;
       width: 12.5rem;
       height: 8.4375rem; } }
+  @media screen and (max-width: 480px) {
+    .index-sale__block {
+      width: 6.875rem;
+      height: 4.84375rem; } }
 
 .index-sale__block:hover .sale-block {
+  -webkit-transition: 5s;
+  -o-transition: 5s;
+  transition: 5s;
   display: block; }
 
 .sale-block {
@@ -663,10 +669,7 @@ button {
   position: absolute;
   top: 0;
   text-align: center;
-  display: none;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s; }
+  display: none; }
 
 .sale-block__sale {
   font-size: 3.125rem;
@@ -700,7 +703,10 @@ button {
   border: 0.0625rem solid #33cc33;
   border-radius: 0.625rem;
   background: #fff;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
   .mod-button:hover {
     color: #fff;
     background: #33cc33; }
@@ -1329,7 +1335,8 @@ button {
   top: 12.5rem;
   left: 25%;
   padding-top: 0.625rem;
-  display: none; }
+  display: none;
+  z-index: 2999; }
 
 .menu-mobile__block {
   display: -webkit-box;
@@ -1391,7 +1398,7 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 10000;
+  z-index: 11000;
   display: none; }
 
 .screen-menu__list {
@@ -1488,7 +1495,8 @@ button {
   left: 0;
   right: 0;
   padding: 0.9375rem;
-  display: none; }
+  display: none;
+  z-index: 10000; }
 
 .modal__block {
   display: -webkit-box;
@@ -1584,12 +1592,12 @@ button {
   position: fixed;
   width: 3.75rem;
   height: 3.75rem;
-  background: rgba(253, 253, 254, 0.4);
+  background: rgba(0, 102, 153, 0.8);
   border-radius: 20%;
   top: 9.375rem;
   right: 9.375rem;
   padding: 0.1875rem;
-  z-index: 99999; }
+  z-index: 1999; }
   @media screen and (max-width: 768px) {
     .price-download {
       right: 0.9375rem; } }
@@ -1610,7 +1618,7 @@ button {
   align-items: center;
   text-decoration: none;
   font-family: helveticaneuecyr-medium;
-  color: #4693cf;
+  color: #fff;
   font-size: 0.75rem; }
 
 .price-download__icon {
@@ -1625,6 +1633,42 @@ button {
 .price-download__title {
   text-align: center;
   line-height: 1; }
+
+.arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  z-index: 15000; }
+  @media screen and (max-width: 768px) {
+    .arrow {
+      display: none; } }
+  @media screen and (max-width: 480px) {
+    .arrow {
+      display: none; } }
+
+#left {
+  background-color: rgba(0, 102, 153, 0.8);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 50%;
+  left: 0;
+  pointer-events: auto;
+  cursor: pointer; }
+
+#right {
+  background-color: rgba(0, 102, 153, 0.8);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  top: 50%;
+  right: 0;
+  pointer-events: auto;
+  cursor: pointer; }
+
+.arrow-carousel {
+  width: 100%;
+  height: 100%; }
 
 .footer__block {
   max-width: 68.75rem;

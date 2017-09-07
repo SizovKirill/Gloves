@@ -1,6 +1,40 @@
 // console.log('in common.js');
 // console.log($);
 
+// owl__carousel
+$(document).ready(function() {
+    let owl = $(".owl-carousel"),
+        prev = $("#left"),
+        next = $("#right");
+
+    owl.owlCarousel({
+        center: true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        smartSpeed: 1500,
+
+        responsive: {
+            840: {
+
+                mouseDrag: false,
+            },
+            1280: {
+                touchDrag: true,
+                // nav: true
+            },
+        }
+    });
+
+    next.on("click", () => {
+        owl.trigger("next.owl.carousel");
+    });
+    prev.on("click", () => {
+        owl.trigger("prev.owl.carousel");
+    })
+
+});
+
 // screen__menu
 $(() => {
     const hamburger = $('.hamburger-menu__block');

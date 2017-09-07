@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="scripts/remodal/remodal.css">
     <link rel="stylesheet" href="scripts/remodal/remodal-default-theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
 
 
 </head>
@@ -129,40 +131,66 @@
                             Акции
                         </div>
                         <div class="index-sale__block-list">
-                            <div class="index-sale__block first">
-                                <img class="first-img" src="./img/first_bg.jpg">
-                                <div class="sale-block">
-                                    <div class="sale-block__sale">
-                                        -20%
+                            <div class="owl-carousel">
+                                <div class="index-sale__block first">
+                                    <img class="first-img" src="./img/first_bg.jpg">
+                                    <div class="sale-block">
+                                        <div class="sale-block__sale">
+                                            -20%
+                                        </div>
+                                        <div class="sale-block__text">
+                                            при заказе от 30 000 руб.
+                                        </div>
+                                        <a href="#sale_first" type="" class="mod-button">Подробнее ...</a>
                                     </div>
-                                    <div class="sale-block__text">
-                                        при заказе от 30 000 руб.
+                                </div>
+                                <div class="index-sale__block second">
+                                    <img class="second-img" src="./img/third_bg.jpg">
+                                    <div class="sale-block">
+                                        <div class="sale-block__sale">
+                                            -10%
+                                        </div>
+                                        <div class="sale-block__text">
+                                            при заказе 100 пар ПВХ
+                                        </div>
+                                        <a href="#sale_second" type="" class="mod-button">Подробнее ...</a>
                                     </div>
-                                    <a href="#sale_first" type="" class="mod-button">Подробнее ...</a>
+                                </div>
+                                <div class="index-sale__block third">
+                                    <img class="third-img" src="./img/second_bg.jpg">
+                                    <div class="sale-block">
+                                        <div class="sale-block__sale">
+                                            -100%
+                                        </div>
+                                        <div class="sale-block__text">
+                                            Бесплатная доставка
+                                        </div>
+                                        <a href="#sale_third" type="" class="mod-button">Подробнее ...</a>
+                                    </div>
+                                </div>
+                                <div class="index-sale__block third">
+                                    <img class="third-img" src="./img/second_bg.jpg">
+                                    <div class="sale-block">
+                                        <div class="sale-block__sale">
+                                            -100%
+                                        </div>
+                                        <div class="sale-block__text">
+                                            Бесплатная доставка
+                                        </div>
+                                        <a href="#sale_third" type="" class="mod-button">Подробнее ...</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="index-sale__block second">
-                                <img class="second-img" src="./img/third_bg.jpg">
-                                <div class="sale-block">
-                                    <div class="sale-block__sale">
-                                        -10%
-                                    </div>
-                                    <div class="sale-block__text">
-                                        при заказе 100 пар ПВХ
-                                    </div>
-                                    <a href="#sale_second" type="" class="mod-button">Подробнее ...</a>
+                            <div class="controls">
+                                <div class="arrow" id="left">
+                                    <svg class="arrow-carousel">
+                                        <use xlink:href="./icon/sprite/sprite.svg#arrow"></use>
+                                    </svg>
                                 </div>
-                            </div>
-                            <div class="index-sale__block third">
-                                <img class="third-img" src="./img/second_bg.jpg">
-                                <div class="sale-block">
-                                    <div class="sale-block__sale">
-                                        -100%
-                                    </div>
-                                    <div class="sale-block__text">
-                                        Бесплатная доставка
-                                    </div>
-                                    <a href="#sale_third" type="" class="mod-button">Подробнее ...</a>
+                                <div class="arrow" id="right">
+                                    <svg class="arrow-carousel">
+                                        <use xlink:href="./icon/sprite/sprite.svg#arrow"></use>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -490,7 +518,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js " integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin=" anonymous ">
     </script>
     <script src="js/common.js "></script>
-    <script src="scripts/remodal/remodal.min.js "></script>
+    <script src="scripts/remodal/remodal.min.js"></script>
+    <script src="scripts/owl_carousel/owl.carousel.min.js"></script>
+
 </body>
 
 </html>
