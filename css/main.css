@@ -208,6 +208,9 @@ button {
   height: 6.25rem;
   background: rgba(0, 102, 153, 0.8);
   margin-bottom: 3.125rem; }
+  @media screen and (max-width: 768px) {
+    .header__block {
+      padding: 1.25rem; } }
   @media screen and (max-width: 480px) {
     .header__block {
       padding: 1.25rem;
@@ -665,7 +668,8 @@ button {
   background-color: rgba(53, 53, 53, 0.48);
   position: absolute;
   top: 0;
-  text-align: center; }
+  text-align: center;
+  display: none; }
 
 .sale-block__sale {
   font-size: 3.125rem;
