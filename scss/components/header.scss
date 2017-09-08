@@ -38,6 +38,9 @@
     height: rem(100px);
     background: rgba(0, 102, 153, 0.8);
     margin-bottom: rem(50px);
+    @include tablets {
+        padding: rem(20px);
+    }
     @include phones {
         padding: rem(20px);
         margin-bottom: initial;
