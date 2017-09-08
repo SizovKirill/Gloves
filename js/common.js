@@ -10,18 +10,19 @@ $(document).ready(function() {
     owl.owlCarousel({
         center: true,
         loop: true,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        smartSpeed: 1500,
+        margin: 10,
+        // autoplay: true,
+        // autoplayTimeout: 2000,
+        // smartSpeed: 1500,
 
         responsive: {
+
             840: {
 
-                mouseDrag: false,
+                // mouseDrag: false,
             },
             1280: {
-                touchDrag: true,
-                // nav: true
+
             },
         }
     });

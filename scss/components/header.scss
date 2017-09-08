@@ -39,6 +39,7 @@
     background: rgba(0, 102, 153, 0.8);
     margin-bottom: rem(50px);
     @include phones {
+        padding: rem(20px);
         margin-bottom: initial;
     }
 }

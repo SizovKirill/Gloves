@@ -40,6 +40,12 @@ body {
   width: 95%;
   max-width: 68.75rem;
   margin: 0 auto; }
+  @media screen and (max-width: 480px) {
+    .container {
+      width: 100%; } }
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 100%; } }
 
 ul {
   padding: 0;
@@ -204,6 +210,7 @@ button {
   margin-bottom: 3.125rem; }
   @media screen and (max-width: 480px) {
     .header__block {
+      padding: 1.25rem;
       margin-bottom: initial; } }
 
 .header__block-left {
@@ -639,22 +646,12 @@ button {
       flex-direction: column; } }
 
 .index-sale__block {
-  width: 18.75rem;
-  height: 11.5625rem;
+  width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden; }
   .index-sale__block:last-child {
     margin-right: initial; }
-  @media screen and (max-width: 768px) {
-    .index-sale__block {
-      margin-right: initial;
-      margin-bottom: 0.625rem;
-      width: 12.5rem;
-      height: 8.4375rem; } }
-  @media screen and (max-width: 480px) {
-    .index-sale__block {
-      width: 6.875rem;
-      height: 4.84375rem; } }
 
 .index-sale__block:hover .sale-block {
   -webkit-transition: 5s;
@@ -668,26 +665,34 @@ button {
   background-color: rgba(53, 53, 53, 0.48);
   position: absolute;
   top: 0;
-  text-align: center;
-  display: none; }
+  text-align: center; }
 
 .sale-block__sale {
   font-size: 3.125rem;
   color: #fff;
   text-align: center;
-  padding-top: 0.625rem; }
+  padding-top: 1.25rem; }
   @media screen and (max-width: 768px) {
     .sale-block__sale {
-      padding-top: 0.9375rem;
+      padding-top: 0.625rem;
       font-size: 1.5rem; } }
+  @media screen and (max-width: 480px) {
+    .sale-block__sale {
+      padding-top: 0.3125rem;
+      font-size: 1.125rem; } }
 
 .sale-block__text {
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
   color: #fff;
   margin-bottom: 0.9375rem; }
   @media screen and (max-width: 768px) {
     .sale-block__text {
-      font-size: 0.625rem; } }
+      font-size: 0.875rem;
+      margin-bottom: 0.625rem; } }
+  @media screen and (max-width: 480px) {
+    .sale-block__text {
+      font-size: 0.625rem;
+      margin-bottom: 0.3125rem; } }
 
 .first-img,
 .second-img,
@@ -710,6 +715,9 @@ button {
   .mod-button:hover {
     color: #fff;
     background: #33cc33; }
+  @media screen and (max-width: 480px) {
+    .mod-button {
+      font-size: 0.625rem; } }
 
 .index-service {
   background: url("../img/index-service_bg.jpg");
@@ -1465,7 +1473,7 @@ button {
     height: 5px;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 0;
     background-color: #fff;
     border-radius: 5px;
     -webkit-transform: rotate(-45deg);
@@ -1478,7 +1486,7 @@ button {
     height: 5px;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 0;
     background-color: #fff;
     border-radius: 5px;
     -webkit-transform: rotate(45deg);
@@ -1565,7 +1573,7 @@ button {
     content: " ";
     display: block;
     width: 1.625rem;
-    height: 5px;
+    height: 0.3125rem;
     position: absolute;
     top: 0;
     left: 50%;
@@ -1595,7 +1603,7 @@ button {
   background: rgba(0, 102, 153, 0.8);
   border-radius: 20%;
   top: 9.375rem;
-  right: 9.375rem;
+  right: 0;
   padding: 0.1875rem;
   z-index: 1999; }
   @media screen and (max-width: 768px) {
