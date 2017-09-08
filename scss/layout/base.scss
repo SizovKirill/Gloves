@@ -32,7 +32,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 100%;
-    // min-width: rem(1100px);
+    // max-width: rem(1100px);
     overflow: hidden;
 }
 
@@ -51,6 +51,12 @@ body {
     width: 95%;
     max-width: rem(1100px);
     margin: 0 auto;
+    @include phones {
+        width: 100%;
+    }
+    @include tablets {
+        width: 100%;
+    }
 }
 
 ul {
