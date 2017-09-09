@@ -61,6 +61,7 @@ h1 {
       font-size: 1.5rem; } }
 
 button {
+  font-family: HelveticaNeueCyr-Light;
   cursor: pointer;
   width: 9.0625rem;
   height: 1.875rem;
@@ -891,7 +892,7 @@ button {
 .index-section__block-list__text {
   text-align: center;
   color: #58595b;
-  font-family: HelveticaNeuecyr;
+  font-family: HelveticaNeueCyr-Light;
   font-size: 0.75rem;
   border-top: 0.1875rem solid #33cc33;
   padding: 1.25rem 0 0 0; }
@@ -967,7 +968,7 @@ button {
   margin-right: 1.875rem;
   float: left;
   padding: 0.3125rem 1.875rem;
-  font: 14px HelveticaNeueCyr;
+  font: 14px HelveticaNeueCyr-Light;
   color: #fff;
   border: 0.0625rem solid #33cc33;
   border-radius: 0.625rem;
