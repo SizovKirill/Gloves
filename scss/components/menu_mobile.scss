@@ -1,64 +1,73 @@
-.menu-mobile {
-    width: rem(600px);
-    height: rem(300px);
+.product-card {
     background-color: $white;
-    position: absolute;
-    top: rem(200px);
-    left: 25%;
     padding-top: rem(10px);
-    display: none;
     z-index: 2999;
 }
 
-.menu-mobile__block {
+.product-card__block {
     display: flex;
     flex-direction: row;
     height: rem(180px);
+    padding: rem(10px);
 }
 
-.menu-mobile__block-img {
+.product-card__block-img {
     background-image: url("../img/catalog/hb.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
 }
 
-.menu-mobile__block-desc__title {
+.product-card__block-desc__title {
     color: $blue;
     font-family: helveticaNeueCyr-Light;
     font-size: rem(16px);
+    margin-bottom: rem(10px);
 }
 
-.menu-mobile__block-img {
+.product-card__block-img {
     width: 35%;
     height: 100%;
 }
 
-.menu-mobile__block-desc {
+.product-card__block-desc {
     width: 65%;
 }
 
-.menu-mobile__block-desc__text {
-    font-size: rem(10px);
+.product-card__block-desc__list {
+    list-style: initial;
+    color: $blue;
 }
 
-.menu-mobile__block-price {
+.product-card__block-desc__text {
+    font-family: helveticaNeueCyr-Light;
+    font-size: rem(12px);
+}
+
+.product-card__block-price {
+    padding: rem(10px);
+}
+
+.product-card__block-price__price {
     color: $blue;
     font-family: helveticaNeueCyr-medium;
     font-size: rem(16px);
     text-align: right;
 }
 
-.menu-mobile__block-description {
+.product-card__block-price__title {
     color: $blue;
     font-family: helveticaNeueCyr-Light;
     font-size: rem(16px);
 }
 
-.menu-mobile__block-desvription__text {
-    height: rem(67px);
+.product-card__block-description {
     background-color: $blue;
+    padding: rem(10px);
+}
+
+.product-card__block-description__text {
     color: $white;
-    font-family: helveticaNeueCyr-medium;
-    font-size: rem(10px);
+    font-family: helveticaNeueCyr-Light;
+    font-size: rem(14px);
 }
