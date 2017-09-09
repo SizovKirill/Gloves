@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="ru">
+
 <head>
     <meta charset="utf-8" />
     <title>ПрофПерчатка.ru</title>
@@ -7,6 +10,8 @@
     <link rel="shortcut icon" href="favicon.iso" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="scripts/remodal/remodal.css">
+    <link rel="stylesheet" href="scripts/remodal/remodal-default-theme.css">
 
 
 </head>
@@ -15,200 +20,165 @@
     <div class="wrapper">
         <div class="maincontent">
 
-            <!--header-->
+            <!-- head -->
             <div class="container container__header">
-                <div class="container container__header">
-                    <div class="container container__header">
-                        <header class="header">
-                            <div class="header__block">
-                                <div class="container container-head">
-                                    <div class="hamburger-menu">
-                                        <a class="hamburger-menu__block" href="#">
-                                            <div class="hamburger-menu__icon"></div>
-                                        </a>
-                                    </div>
-                                    <div class="header__block-left">
-                                        <div class="header__block-logo">
-                                            <a href="index.html" class="header__block-logo__link">
-                                                <svg class="header__block-logo__img">
-                                                    <use xlink:href="./icon/sprite/sprite.svg#logo"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="header__block-center">
-                                        <nav class="header__block-center__menu">
-                                            <ul class="header__block-center__menu-list">
-                                                <li class="header__block-center__menu__item">
-                                                    <a href="index.html" class="header__block-center__menu-link active">
-                                                Главная
-                                            </a>
-                                                </li>
-                                                <li class="header__block-center__menu__item">
-                                                    <a href="about.html" class="header__block-center__menu-link">
-                                                О компании
-                                            </a>
-                                                </li>
-                                                <li class="header__block-center__menu__item">
-                                                    <a href="product.html" class="header__block-center__menu-link">
-                                                Продукция
-                                            </a>
-                                                </li>
-                                                <li class="header__block-center__menu__item">
-                                                    <a href="partner.html" class="header__block-center__menu-link">
-                                                Партнерам
-                                            </a>
-                                                </li>
-                                                <li class="header__block-center__menu__item">
-                                                    <a href="contacts.html" class="header__block-center__menu-link">
-                                                Контакты
-                                            </a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <div class="header__block-right">
-                                        <div class="header__block-right__contacts">
-                                            <div class="contacts__phone-icon">
-                                                <svg class="contacts__phone-icon__img">
-                                                <use xlink:href="./icon/sprite/sprite.svg#phone"></use>
+
+                <!--header-->
+                <header class="header">
+                    <div class="header__block">
+                        <div class="container container-head">
+                            <div class="hamburger-menu">
+                                <a class="hamburger-menu__block" href="#">
+                                    <div class="hamburger-menu__icon"></div>
+                                </a>
+                            </div>
+                            <div class="header__block-left">
+                                <div class="header__block-logo">
+                                    <a href="index.html" class="header__block-logo__link">
+                                        <svg class="header__block-logo__img">
+                                                <use xlink:href="./icon/sprite/sprite.svg#logo"></use>
                                             </svg>
-                                            </div>
-                                            <div class="contacts__phone-number">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header__block-center">
+                                <nav class="header__block-center__menu">
+                                    <ul class="header__block-center__menu-list">
+                                        <li class="header__block-center__menu__item">
+                                            <a href="index.html" class="header__block-center__menu-link">
+                                            Главная
+                                        </a>
+                                        </li>
+                                        <li class="header__block-center__menu__item">
+                                            <a href="about.html" class="header__block-center__menu-link">
+                                            О компании
+                                        </a>
+                                        </li>
+                                        <li class="header__block-center__menu__item">
+                                            <a href="product.html" class="header__block-center__menu-link active">
+                                            Продукция
+                                        </a>
+                                        </li>
+                                        <li class="header__block-center__menu__item">
+                                            <a href="partner.html" class="header__block-center__menu-link">
+                                            Партнерам
+                                        </a>
+                                        </li>
+                                        <li class="header__block-center__menu__item">
+                                            <a href="contacts.html" class="header__block-center__menu-link">
+                                            Контакты
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header__block-right">
+                                <div class="header__block-right__contacts">
+                                    <div class="contacts__phone-icon">
+                                        <svg class="contacts__phone-icon__img">
+                                            <use xlink:href="./icon/sprite/sprite.svg#phone"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="contacts__phone-number">
+                                        <a href="tel:+74955999955" class="contacts__phone-number__link">
                                                 +7 495 599-99-55
-                                            </div>
+                                            </a>
+                                    </div>
+                                </div>
+                                <div class="header__block-right__schedule">
+                                    <div class="header__block-right__schedule-link">
+                                        график работы
+                                    </div>
+                                    <div class="header__block-right__dropdown">
+                                        <div class="header__block-right__dropdown-time">
+                                            пн-вс: 09:00-20:00
                                         </div>
-                                        <div class="header__block-right__schedule">
-                                            <div class="header__block-right__schedule-link">
-                                                график работы
-                                            </div>
-                                            <div class="header__block-right__dropdown">
-                                                <div class="header__block-right__dropdown-time">
-                                                    пн-вс: 09:00-20:00
-                                                </div>
-                                                <div class="header__block-right__dropdown-lunch">
-                                                    обед: 14:00-14:30
-                                                </div>
-                                            </div>
+                                        <div class="header__block-right__dropdown-lunch">
+                                            обед: 14:00-14:30
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </header>
-                        <div class="header__bg">
-                        </div>
-
-                        <!--index-->
-                        <div class="header__index">
-                            <div class="header__index-block-title">
-                                <h1>Средства индивидуальной защиты <span class="span-title">Оптом</span></h1>
-                                <div class="header__index-block-text">Индивидуальный подход и гибкая ценовая политика, это то, что успели оценить наши постоянные партнеры за многолетний опыт сотрудничества. Без нашей продукции невозможно представить современную и безопасную организацию труда
-                                    на складах, заводах, производственных цехах, местах где под пристальным вниманием находится безопасность сотрудников, и создаются все условия для ее обеспечения.
-                                </div>
-                            </div>
-
-                            <!-- form -->
-                            <div class="header__index-block__form">
-                                <form class="header__block-form-elem" action="server.php" method="POST" id="index-form">
-                                    <input type="text" placeholder="Ваше имя" name="user-name" id="user-name" class="form__input-text">
-                                    <input type="text" placeholder="+7 (___)" name="user-phone" id="user-phone" class="form__input-text">
-                                    <textarea placeholder="Удобное время" name="time" id="time" class="form__textarea"></textarea>
-                                    <input type="submit" value="Отправить" class="form__submit-botom">
-                                </form>
-                            </div>
                         </div>
                     </div>
-                    <div class="header__bg">
-                    </div>
-                    <!--index-->
-                    <div class="header__index">
-                        <div class="header__index-block-title">
-                            <h1>Средства индивидуальной защиты <span class="span-title">Оптом</span></h1>
-                            <div class="header__index-block-text">Индивидуальный подход и гибкая ценовая политика, это то, что успели оценить наши постоянные партнеры за многолетний опыт сотрудничества. Без нашей продукции невозможно представить современную и безопасную организацию труда
-                                на складах, заводах, производственных цехах, местах где под пристальным вниманием находится безопасность сотрудников, и создаются все условия для ее обеспечения.
-                            </div>
-                        </div>
-                        <div class="header__index-block__form">
-                            <form class="header__block-form-elem" action="server.php" method="POST" id="index-form">
-                                <input type="text" placeholder="Ваше имя" name="user-name" id="user-name" class="form__input-text">
-                                <input type="text" placeholder="+7 (___)" name="user-phone" id="user-phone" class="form__input-text">
-                                <textarea placeholder="Удобное время" name="time" id="time" class="form__textarea"></textarea>
-                                <input type="submit" value="Отправить" class="form__submit-botom">
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                </header>
                 <div class="header__bg">
                 </div>
+
                 <!--product__category-->
                 <div class="product-category">
                     <div class="container">
                         <div class="product-category__block-list">
                             <div class="product-category__block p-first">
                                 <img class="first-img" src="./img/third_bg.jpg" alt="">
-                                <a href="index.html" class="product-category__block-link">
+                                <a href="#" class="product-category__block-link">
                                     <div class="product-category__sale-block">
                                         <div class="product-category__sale-block__icon">
                                             <svg class="product-category__sale-block__icon-img">
-                                                <use xlink:href="./icon/sprite/sprite.svg#mitten"></use>
-                                            </svg>
+                                            <use xlink:href="./icon/sprite/sprite.svg#mitten"></use>
+                                        </svg>
                                         </div>
                                         <div class="product-category__sale-block__sale">
                                             средства защиты рук
                                         </div>
                                         <div class="product-category__sale-block__arrow">
                                             <svg class="product-category__sale-block__arrow-img">
-                                                <use xlink:href="./icon/sprite/sprite.svg#arrow"></use>
-                                            </svg>
+                                        <use xlink:href="./icon/sprite/sprite.svg#arrow"></use>
+                                    </svg>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="product-category__block p-second">
                                 <img class="second-img" src="./img/derma.jpg" alt="">
-                                <div class="product-category__sale-block">
-                                    <div class="product-category__sale-block__icon">
-                                        <svg class="product-category__sale-block__icon-img">
+                                <a href="#" class="product-category__block-link">
+                                    <div class="product-category__sale-block">
+                                        <div class="product-category__sale-block__icon">
+                                            <svg class="product-category__sale-block__icon-img">
                                         <use xlink:href="./icon/sprite/sprite.svg#cream"></use>
                                     </svg>
-                                    </div>
-                                    <div class="product-category__sale-block__sale">
-                                        Дерматологические средства индивидуальной защиты
-                                    </div>
-                                    <div class="product-category__sale-block__arrow">
-                                        <svg class="product-category__sale-block__arrow-img">
+                                        </div>
+                                        <div class="product-category__sale-block__sale">
+                                            Дерматологические средства индивидуальной защиты
+                                        </div>
+                                        <div class="product-category__sale-block__arrow">
+                                            <svg class="product-category__sale-block__arrow-img">
                                         <use xlink:href="./icon/sprite/sprite.svg#arrow"></use>
                                     </svg>
+                                        </div>
                                     </div>
-                                </div>
-
+                                </a>
                             </div>
                             <div class="product-category__block p-third">
                                 <img class="third-img" src="./img/indi.jpg" alt="">
-                                <div class="product-category__sale-block">
-                                    <div class="product-category__sale-block__icon">
-                                        <svg class="product-category__sale-block__icon-img">
+                                <a href="#" class="product-category__block-link">
+                                    <div class="product-category__sale-block">
+                                        <div class="product-category__sale-block__icon">
+                                            <svg class="product-category__sale-block__icon-img">
                                         <use xlink:href="./icon/sprite/sprite.svg#helmet"></use>
                                     </svg>
-                                    </div>
-                                    <div class="product-category__sale-block__sale">
-                                        индивидуальные средства защиты
-                                    </div>
-                                    <div class="product-category__sale-block__arrow">
-                                        <svg class="product-category__sale-block__arrow-img">
+                                        </div>
+                                        <div class="product-category__sale-block__sale">
+                                            индивидуальные средства защиты
+                                        </div>
+                                        <div class="product-category__sale-block__arrow">
+                                            <svg class="product-category__sale-block__arrow-img">
                                         <use xlink:href="./icon/sprite/sprite.svg#arrow"></use>
                                     </svg>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- product-block -->
+            <!-- product__block -->
             <div class="container container__product">
                 <div class="product-block">
+
+                    <!-- sidebar -->
                     <div class="product-block__sidebar">
                         <nav class="sidebar-nav">
                             <ul class="sidebar__list">
@@ -359,6 +329,8 @@
                             </ul>
                         </nav>
                     </div>
+
+                    <!-- product_block_catalog -->
                     <div class="product-block__catalog">
                         <div class="catalog__title-category">
                             средства защиты рук
@@ -369,176 +341,51 @@
                             <a class="breadcrumb-item" href="#">Средства защиты рук/</a>
                             <span class="breadcrumb-item active">Перчатки ХБ</span>
                         </nav>
-                        <ul class="catalog-list">
-                            <li class="catalog-item">
-                                <a class="catalog-item__link" href="#">
-                                    <div class="catalog-item__img">
-                                    </div>
-                                    <div class="catalog-item__title">
-                                        Перчатки ХБ с ПВХ 3 нити 7,5 класс
-                                    </div>
-                                    <div class="catalog-item__text">
-                                        Благодаря полимерному покрытию на перчатках х/б обеспечивается повышенная стойкость к истиранию и защита от скольжения
-                                    </div>
-                                    <div class="catalog-item__price">
-                                        7.20 руб.
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="catalog-item">
-                                <a class="catalog-item__link" href="#">
-                                    <div class="catalog-item__img">
-                                    </div>
-                                    <div class="catalog-item__title">
-                                        Перчатки ХБ с ПВХ 3 нити 7,5 класс
-                                    </div>
-                                    <div class="catalog-item__text">
-                                        Благодаря полимерному покрытию на перчатках х/б обеспечивается повышенная стойкость к истиранию и защита от скольжения
-                                    </div>
-                                    <div class="catalog-item__price">
-                                        7.20 руб.
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="catalog-item">
-                                <a class="catalog-item__link" href="#">
-                                    <div class="catalog-item__img">
-                                    </div>
-                                    <div class="catalog-item__title">
-                                        Перчатки ХБ с ПВХ 3 нити 7,5 класс
-                                    </div>
-                                    <div class="catalog-item__text">
-                                        Благодаря полимерному покрытию на перчатках х/б обеспечивается повышенная стойкость к истиранию и защита от скольжения
-                                    </div>
-                                    <div class="catalog-item__price">
-                                        7.20 руб.
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="catalog-item">
-                                <a class="catalog-item__link" href="#">
-                                    <div class="catalog-item__img">
-                                    </div>
-                                    <div class="catalog-item__title">
-                                        Перчатки ХБ с ПВХ 3 нити 7,5 класс
-                                    </div>
-                                    <div class="catalog-item__text">
-                                        Благодаря полимерному покрытию на перчатках х/б обеспечивается повышенная стойкость к истиранию и защита от скольжения
-                                    </div>
-                                    <div class="catalog-item__price">
-                                        7.20 руб.
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="catalog-item">
-                                <a class="catalog-item__link" href="#">
-                                    <div class="catalog-item__img">
-                                    </div>
-                                    <div class="catalog-item__title">
-                                        Перчатки ХБ с ПВХ 3 нити 7,5 класс
-                                    </div>
-                                    <div class="catalog-item__text">
-                                        Благодаря полимерному покрытию на перчатках х/б обеспечивается повышенная стойкость к истиранию и защита от скольжения
-                                    </div>
-                                    <div class="catalog-item__price">
-                                        7.20 руб.
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="catalog-item">
-                                <a class="catalog-item__link" href="#">
-                                    <div class="catalog-item__img">
-                                    </div>
-                                    <div class="catalog-item__title">
-                                        Перчатки ХБ с ПВХ 3 нити 7,5 класс
-                                    </div>
-                                    <div class="catalog-item__text">
-                                        Благодаря полимерному покрытию на перчатках х/б обеспечивается повышенная стойкость к истиранию и защита от скольжения
-                                    </div>
-                                    <div class="catalog-item__price">
-                                        7.20 руб.
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="catalog-item">
-                                <a class="catalog-item__link" href="#">
-                                    <div class="catalog-item__img">
-                                    </div>
-                                    <div class="catalog-item__title">
-                                        Перчатки ХБ с ПВХ 3 нити 7,5 класс
-                                    </div>
-                                    <div class="catalog-item__text">
-                                        Благодаря полимерному покрытию на перчатках х/б обеспечивается повышенная стойкость к истиранию и защита от скольжения
-                                    </div>
-                                    <div class="catalog-item__price">
-                                        7.20 руб.
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="catalog-item">
-                                <a class="catalog-item__link" href="#">
-                                    <div class="catalog-item__img">
-                                    </div>
-                                    <div class="catalog-item__title">
-                                        Перчатки ХБ с ПВХ 3 нити 7,5 класс
-                                    </div>
-                                    <div class="catalog-item__text">
-                                        Благодаря полимерному покрытию на перчатках х/б обеспечивается повышенная стойкость к истиранию и защита от скольжения
-                                    </div>
-                                    <div class="catalog-item__price">
-                                        7.20 руб.
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="catalog-item">
-                                <a class="catalog-item__link" href="#">
-                                    <div class="catalog-item__img">
-                                    </div>
-                                    <div class="catalog-item__title">
-                                        Перчатки ХБ с ПВХ 3 нити 7,5 класс
-                                    </div>
-                                    <div class="catalog-item__text">
-                                        Благодаря полимерному покрытию на перчатках х/б обеспечивается повышенная стойкость к истиранию и защита от скольжения
-                                    </div>
-                                    <div class="catalog-item__price">
-                                        7.20 руб.
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
 
-                        <!-- Number_page -->
-                        <div class="catalog__number-page">
-                            <ul class="catalog__number-page__list">
-                                <li class="catalog__number-page__item">
-                                    <a class="catalog__number-page__link " href="#">
-                                        <</a>
-                                </li>
-                                <li class="catalog__number-page__item">
-                                    <a class="catalog__number-page__link page-active" href="#">
-                                    1</a>
-                                </li>
-                                <li class="catalog__number-page__item">
-                                    <a class="catalog__number-page__link" href="#">
-                                   2</a>
-                                </li>
-                                <li class="catalog__number-page__item">
-                                    <a class="catalog__number-page__link" href="#">
-                                    3</a>
-                                </li>
-                                <li class="catalog__number-page__item">
-                                    <a class="catalog__number-page__link" href="#">
-                                    4</a>
-                                </li>
-                                <li class="catalog__number-page__item">
-                                    <a class="catalog__number-page__link" href="#">
-                                    5</a>
-                                </li>
-                                <li class="catalog__number-page__item">
-                                    <a class="catalog__number-page__link" href="#">
-                                    ></a>
-                                </li>
-                            </ul>
+                        <!-- product_card -->
+                        <div class="product-card">
+                            <div class="product-card__block">
+                                <div class="product-card__block-img">
+                                </div>
+                                <div class="product-card__block-desc">
+                                    <div class="product-card__block-desc__title">
+                                        Перчатки ХБ с ПВХ 3 нити 10 класс
+                                    </div>
+                                    <div class="product-card__block-desc__text">
+                                        <ul class="product-card__block-desc__list">
+                                            <li class="menu-mobile__block-desc__item">
+                                                Прочная основа и ПВХ нанесение обепечивают защиту от загрязнений и стойкость к истиранию
+                                            </li>
+                                            <li class="menu-mobile__block-desc__item">
+                                                Эластичная вязаная манжета удобно облегает запястье и фиксирует перчатку
+                                            </li>
+                                            <li class="menu-mobile__block-desc__item">
+                                                Классический белый цвет с синим ПВХ нанесением
+                                            </li>
+                                            <li class="menu-mobile__block-desc__item">
+                                                Выгодная цена
+                                            </li>
+                                            <li class="menu-mobile__block-desc__item">
+                                                10 класс вязки
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__block-price">
+                                <div class="product-card__block-price__price">
+                                    8,40 руб.
+                                </div>
+                                <div class="product-card__block-price__title">
+                                    Описание
+                                </div>
+                            </div>
+                            <div class="product-card__block-description">
+                                <div class="product-card__block-description__text">
+                                    Используется современное автоматическое трикотажное оборудование 10 класса вязки. Благодаря полимерному покрытию на перчатках х/б обеспечивается повышенная стойкость к истиранию и защита от скольжения. Более плотная вязка обеспечивает наилучшую защиту
+                                    рук от производственных загрязнений и травм. При этом малая совокупная толщина нити обеспечивает высокую чувствительность пальцев рук для проведения тонких работ.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -553,7 +400,7 @@
                         </div>
                         <div class="index-sale__block-list">
                             <div class="index-sale__block first">
-                                <img class="first-img" src="./img/first_bg.jpg" alt="">
+                                <img class="first-img" src="./img/first_bg.jpg">
                                 <div class="sale-block">
                                     <div class="sale-block__sale">
                                         -20%
@@ -561,11 +408,11 @@
                                     <div class="sale-block__text">
                                         при заказе от 30 000 руб.
                                     </div>
-                                    <button type="">Подробнее...</button>
+                                    <a href="#sale_first" type="" class="mod-button">Подробнее ...</a>
                                 </div>
                             </div>
                             <div class="index-sale__block second">
-                                <img class="second-img" src="./img/third_bg.jpg" alt="">
+                                <img class="second-img" src="./img/third_bg.jpg">
                                 <div class="sale-block">
                                     <div class="sale-block__sale">
                                         -10%
@@ -573,11 +420,11 @@
                                     <div class="sale-block__text">
                                         при заказе 100 пар ПВХ
                                     </div>
-                                    <button type="">Подробнее...</button>
+                                    <a href="#sale_second" type="" class="mod-button">Подробнее ...</a>
                                 </div>
                             </div>
                             <div class="index-sale__block third">
-                                <img class="third-img" src="./img/second_bg.jpg" alt="">
+                                <img class="third-img" src="./img/second_bg.jpg">
                                 <div class="sale-block">
                                     <div class="sale-block__sale">
                                         -100%
@@ -585,8 +432,69 @@
                                     <div class="sale-block__text">
                                         Бесплатная доставка
                                     </div>
-                                    <button type="">Подробнее...</button>
+                                    <a href="#sale_third" type="" class="mod-button">Подробнее ...</a>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal_1-->
+                    <div class="index-sale__modal remodal" data-remodal-id="sale_first">
+                        <div class=" modal__block ">
+                            <div class="modal__block-icon ">
+                                <img class="modal__block-icon__img " src="./img/first_bg.jpg ">
+                            </div>
+                            <div class="modal__block-description ">
+                                <div class="modal__block-title ">
+                                    Скидка -20% при заказе от 30 000 руб.
+                                </div>
+                                <div class="modal__block-text ">
+                                    До 1-го октября 2017 при заказе любой продукции от 30 000 рублей скидка на весь заказ 20%. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus repellendus omnis voluptates quas natus necessitatibus voluptatem dolorum? Accusantium odit
+                                    ducimus perferendis optio consectetur nihil excepturi unde quas aperiam minima dicta, blanditiis eveniet quae suscipit eius voluptatibus consequatur dolor deleniti. Autem!
+                                </div>
+                            </div>
+                            <div class="modal__block-button " id="exit ">
+                                <a href="#" class="modal__block-button__exit "></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal_2 -->
+                    <div class="index-sale__modal remodal" data-remodal-id="sale_second">
+                        <div class="modal__block ">
+                            <div class="modal__block-icon ">
+                                <img class="modal__block-icon__img " src="./img/third_bg.jpg">
+                            </div>
+                            <div class="modal__block-description ">
+                                <div class="modal__block-title ">
+                                    Скидка -10% при заказе 100 пар ПВХ
+                                </div>
+                                <div class="modal__block-text ">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus odit, iusto alias quas natus provident rerum ut delectus aperiam. Doloribus explicabo, ex quisquam molestiae quae beatae nostrum ut nemo? Voluptas, qui nesciunt! Natus nobis magnam explicabo
+                                    deleniti aliquid. Ullam, et. Magni, ipsa repellendus! Porro, odit. Mollitia iure nemo vel quisquam odio ipsam. Harum ipsam odit aliquam corrupti, neque quam cumque?
+                                </div>
+                            </div>
+                            <div class="modal__block-button " id="exit ">
+                                <a href="# " class="modal__block-button__exit "></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal_3 -->
+                    <div class="index-sale__modal remodal" data-remodal-id="sale_third">
+                        <div class="modal__block ">
+                            <div class="modal__block-icon ">
+                                <img class="modal__block-icon__img " src="./img/second_bg.jpg">
+                            </div>
+                            <div class="modal__block-description ">
+                                <div class="modal__block-title ">
+                                    Бесплатная доставка
+                                </div>
+                                <div class="modal__block-text ">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus odit, iusto alias quas natus provident rerum ut delectus aperiam. Doloribus explicabo, ex quisquam molestiae quae beatae nostrum ut nemo? Voluptas, qui nesciunt! Natus nobis magnam explicabo
+                                    deleniti aliquid. Ullam, et. Magni, ipsa repellendus! Porro, odit. Mollitia iure nemo vel quisquam odio ipsam. Harum ipsam odit aliquam corrupti, neque quam cumque?
+                                </div>
+                            </div>
+                            <div class="modal__block-button " id="exit">
+                                <a href="#" class="modal__block-button__exit"></a>
                             </div>
                         </div>
                     </div>
@@ -659,74 +567,6 @@
                     </div>
                 </div>
             </footer>
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer__block">
-                        <div class="footer__block-item logo">
-                            <div class="footer__block-item__logo">
-                                <svg class="footer__block-logo-img">
-                                <use xlink:href="./icon/sprite/sprite.svg#logo"></use>
-                            </svg>
-                            </div>
-                        </div>
-                        <div class="footer__block-item nav ">
-                            <ul class="footer__block-item__nav-list">
-                                <li class="footer__block-item__nav-item">
-                                    <a class="footer__block-item__nav-link" href="about.html">О компании</a>
-                                </li>
-                                <li class="footer__block-item__nav-item">
-                                    <a class="footer__block-item__nav-link" href="partner.html">Партнерам</a>
-                                </li>
-                                <!--<li class="footer__block-item__nav-item">
-                            <a class="footer__block-item__nav-link" href="partner.html">Партнерам</a>
-                        </li>-->
-                                <li class="footer__block-item__nav-item">
-                                    <a class="footer__block-item__nav-link" href="product.html">Продукция</a>
-                                </li>
-                                <li>
-                                    <a href=""></a>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <!--<div class="footer__block-item nav">
-
-                    </div>-->
-                        <div class="footer__block-item contacts">
-                            <div class="footer__block-address">
-                                <div class="footer__block-icon">
-                                    <svg class="footer__block-icon-img">
-                                <use xlink:href="./icon/sprite/sprite.svg#point"></use>
-                            </svg>
-                                </div>
-                                <div class="footer__block-text">
-                                    142700, Москва,<br>ул. Полбина, 12
-                                </div>
-                            </div>
-                            <div class="footer__block-phone">
-                                <div class="footer__block-phone__icon">
-                                    <svg class="footer__block-icon-img">
-                                    <use xlink:href="./icon/sprite/sprite.svg#phone_footer"></use>
-                                </svg>
-                                </div>
-                                <div class="footer__block-text">
-                                    +7 (495) 599-99-55
-                                </div>
-                            </div>
-                            <div class="footer__block-email">
-                                <div class="footer__block-email__icon">
-                                    <svg class="footer__block-icon-img">
-                                    <use xlink:href="./icon/sprite/sprite.svg#mail"></use>
-                                </svg>
-                                </div>
-                                <div class="footer__block-text">
-                                    info@prof-perchatka.ru
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
 
             <!--screen__menu-->
             <div class="screen-menu">
@@ -758,48 +598,19 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </div>
-    <div hidden>
-        <div class="menu-mobile">
-            <div class="menu-mobile__block">
-                <div class="menu-mobile__block-img">
 
-                </div>
-                <div class="menu-mobile__block-desc">
-                    <div class="menu-mobile__block-desc__title">
-                        Перчатки ХБ с ПВХ 3 нити 10 класс
+            <!-- download__price -->
+            <div class="price-download">
+                <a href="./download/price_07.09.2017.xlsx" class="price-download-link">
+                    <div class="price-download__icon">
+                        <svg class="price-download__icon-img ">
+                                <use xlink:href="./icon/sprite/sprite.svg#download_icon "></use>
+                            </svg>
                     </div>
-                    <div class="menu-mobile__block-desc__text">
-                        <ul class="menu-mobile__block-desc__list">
-                            <li class="menu-mobile__block-desc__item">
-                                Прочная основа и ПВХ нанесение обепечивают защиту от загрязнений и стойкость к истиранию
-                            </li>
-                            <li class="menu-mobile__block-desc__item">
-                                Эластичная вязаная манжета удобно облегает запястье и фиксирует перчатку
-                            </li>
-                            <li class="menu-mobile__block-desc__item">
-                                Классический белый цвет с синим ПВХ нанесением
-                            </li>
-                            <li class="menu-mobile__block-desc__item">
-                                Выгодная цена
-                            </li>
-                            <li class="menu-mobile__block-desc__item">
-                                10 класс вязки
-                            </li>
-                        </ul>
+                    <div class="price-download__title">
+                        скачать прайс
                     </div>
-                </div>
-            </div>
-            <div class="menu-mobile__block-price">
-                8,40 руб.
-            </div>
-            <div class="menu-mobile__block-description">
-                Описание
-            </div>
-            <div class="menu-mobile__block-desvription__text">
-                Используется современное автоматическое трикотажное оборудование 10 класса вязки. Благодаря полимерному покрытию на перчатках х/б обеспечивается повышенная стойкость к истиранию и защита от скольжения. Более плотная вязка обеспечивает наилучшую защиту
-                рук от производственных загрязнений и травм. При этом малая совокупная толщина нити обеспечивает высокую чувствительность пальцев рук для проведения тонких работ.
+                </a>
             </div>
         </div>
     </div>
@@ -810,6 +621,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
     </script>
     <script src="js/common.js"></script>
+    <script src="scripts/remodal/remodal.min.js "></script>
 
 </body>
 

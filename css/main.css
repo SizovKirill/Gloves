@@ -1339,18 +1339,12 @@ button {
   border-radius: 0.3125rem;
   color: #fff; }
 
-.menu-mobile {
-  width: 37.5rem;
-  height: 18.75rem;
+.product-card {
   background-color: #fff;
-  position: absolute;
-  top: 12.5rem;
-  left: 25%;
   padding-top: 0.625rem;
-  display: none;
   z-index: 2999; }
 
-.menu-mobile__block {
+.product-card__block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1360,46 +1354,58 @@ button {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  height: 11.25rem; }
+  height: 11.25rem;
+  padding: 0.625rem; }
 
-.menu-mobile__block-img {
+.product-card__block-img {
   background-image: url("../img/catalog/hb.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%; }
 
-.menu-mobile__block-desc__title {
+.product-card__block-desc__title {
   color: #4693cf;
   font-family: helveticaNeueCyr-Light;
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin-bottom: 0.625rem; }
 
-.menu-mobile__block-img {
+.product-card__block-img {
   width: 35%;
   height: 100%; }
 
-.menu-mobile__block-desc {
+.product-card__block-desc {
   width: 65%; }
 
-.menu-mobile__block-desc__text {
-  font-size: 0.625rem; }
+.product-card__block-desc__list {
+  list-style: initial;
+  color: #4693cf; }
 
-.menu-mobile__block-price {
+.product-card__block-desc__text {
+  font-family: helveticaNeueCyr-Light;
+  font-size: 0.75rem; }
+
+.product-card__block-price {
+  padding: 0.625rem; }
+
+.product-card__block-price__price {
   color: #4693cf;
   font-family: helveticaNeueCyr-medium;
   font-size: 1rem;
   text-align: right; }
 
-.menu-mobile__block-description {
+.product-card__block-price__title {
   color: #4693cf;
   font-family: helveticaNeueCyr-Light;
   font-size: 1rem; }
 
-.menu-mobile__block-desvription__text {
-  height: 4.1875rem;
+.product-card__block-description {
   background-color: #4693cf;
+  padding: 0.625rem; }
+
+.product-card__block-description__text {
   color: #fff;
-  font-family: helveticaNeueCyr-medium;
-  font-size: 0.625rem; }
+  font-family: helveticaNeueCyr-Light;
+  font-size: 0.875rem; }
 
 .screen-menu {
   width: 100%;
