@@ -267,7 +267,7 @@ button {
     padding-bottom: 0.6875rem;
     border-bottom: 0.1875rem solid #fff; }
 
-.active {
+.active-c {
   color: #33cc33;
   padding-bottom: 0.6875rem;
   border-bottom: 0.1875rem solid #fff; }
@@ -708,7 +708,7 @@ button {
   text-decoration: none;
   padding: 0.3125rem 1.875rem;
   font-size: 0.875rem;
-  font-family: HelveticaNeueCyr;
+  font-family: HelveticaNeueCyr-light;
   color: #33cc33;
   border: 0.0625rem solid #33cc33;
   border-radius: 0.625rem;
@@ -1050,6 +1050,9 @@ button {
   display: flex; }
 
 .product-category__sale-block {
+  display: none; }
+
+.product-category__sale-block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1152,7 +1155,6 @@ button {
 
 .product-block__sidebar {
   width: 25%;
-  height: 100%;
   margin-right: 5%;
   margin-top: 3.125rem; }
   @media screen and (max-width: 768px) {
@@ -1183,8 +1185,16 @@ button {
   -ms-flex-align: center;
   align-items: center;
   height: 2.5rem;
-  width: 13.75rem;
-  border-bottom: 0.125rem solid #4693cf; }
+  width: 13.75rem; }
+  .sidebar__item:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.125rem;
+    background-color: #4693cf;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
   @media screen and (max-width: 768px) {
     .sidebar__item {
       width: 60%;
@@ -1193,26 +1203,22 @@ button {
     .sidebar__item {
       width: 80%; } }
 
-.sidebar__item:hover {
-  border-bottom: 0.125rem solid #33cc33; }
-
-.sidebar__item:hover .sidebar__item-icon {
+.active .sidebar__item-icon,
+.sidebar__item-link {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-  @media screen and (max-width: 768px) {
-    .sidebar__item:hover .sidebar__item-icon {
-      display: none; } }
+  .active .sidebar__item-icon:hover,
+  .sidebar__item-link:hover {
+    color: #33cc33; }
 
 .sidebar__item-text {
-  width: 11.5625rem;
+  width: 90%;
   margin-left: 0.625rem; }
   @media screen and (max-width: 768px) {
     .sidebar__item-text {
-      width: 85%; }
-      .sidebar__item-text:hover {
-        color: #33cc33; } }
+      width: 85%; } }
 
 .sidebar__item-icon {
   position: absolute;
@@ -1223,7 +1229,8 @@ button {
 
 .sidebar__item-icon__img {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  z-index: 2000; }
 
 .product-block__catalog {
   width: 75%;
@@ -1355,7 +1362,10 @@ button {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  height: 11.25rem;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 0.625rem; }
 
 .product-card__block-img {
@@ -1372,32 +1382,60 @@ button {
 
 .product-card__block-img {
   width: 35%;
-  height: 100%; }
+  height: 11.25rem; }
 
 .product-card__block-desc {
-  width: 65%; }
+  width: 60%; }
 
 .product-card__block-desc__list {
   list-style: initial;
-  color: #4693cf; }
+  color: #4693cf;
+  margin-left: 2%; }
+
+.menu-mobile__block-desc__item {
+  margin-bottom: 0.3125rem;
+  font-size: 0.75rem; }
 
 .product-card__block-desc__text {
-  font-family: helveticaNeueCyr-Light;
+  font-family: HelveticaNeueCyr-Light;
   font-size: 0.75rem; }
 
 .product-card__block-price {
-  padding: 0.625rem; }
+  padding: 0.625rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .product-card__block-price__price {
+  width: 20%;
   color: #4693cf;
-  font-family: helveticaNeueCyr-medium;
-  font-size: 1rem;
-  text-align: right; }
+  font-family: HelveticaNeueCyr-light;
+  font-size: 1.25rem;
+  text-align: left;
+  border-left: 0.125rem solid #33cc33;
+  padding-left: 0.625rem; }
+  @media screen and (max-width: 480px) {
+    .product-card__block-price__price {
+      width: 30%; } }
 
 .product-card__block-price__title {
+  width: 80%;
   color: #4693cf;
   font-family: helveticaNeueCyr-Light;
   font-size: 1rem; }
+  @media screen and (max-width: 480px) {
+    .product-card__block-price__title {
+      width: 70%; } }
 
 .product-card__block-description {
   background-color: #4693cf;

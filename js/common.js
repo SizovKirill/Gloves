@@ -36,6 +36,14 @@ $(document).ready(function() {
 
 });
 
+// class_active
+$(document).ready(function() {
+    $('.sidebar__list .sidebar__item-link').click(function() {
+        $('.sidebar__item-link').removeClass("active");
+        $(this).addClass("active");
+    });
+});
+
 // screen__menu
 $(() => {
     const hamburger = $('.hamburger-menu__block');
