@@ -1,73 +1,92 @@
-.product-card {
-    background-color: $white;
-    padding-top: rem(10px);
-    z-index: 2999;
-}
-
-.product-card__block {
-    display: flex;
-    flex-direction: row;
-    height: rem(180px);
-    padding: rem(10px);
-}
-
-.product-card__block-img {
-    background-image: url("../img/catalog/hb.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 50%;
-}
-
-.product-card__block-desc__title {
-    color: $blue;
-    font-family: helveticaNeueCyr-Light;
-    font-size: rem(16px);
-    margin-bottom: rem(10px);
-}
-
-.product-card__block-img {
-    width: 35%;
-    height: 100%;
-}
-
-.product-card__block-desc {
-    width: 65%;
-}
-
-.product-card__block-desc__list {
-    list-style: initial;
-    color: $blue;
-}
-
-.product-card__block-desc__text {
-    font-family: helveticaNeueCyr-Light;
-    font-size: rem(12px);
-}
-
-.product-card__block-price {
-    padding: rem(10px);
-}
-
-.product-card__block-price__price {
-    color: $blue;
-    font-family: helveticaNeueCyr-medium;
-    font-size: rem(16px);
-    text-align: right;
-}
-
-.product-card__block-price__title {
-    color: $blue;
-    font-family: helveticaNeueCyr-Light;
-    font-size: rem(16px);
-}
-
-.product-card__block-description {
-    background-color: $blue;
-    padding: rem(10px);
-}
-
-.product-card__block-description__text {
-    color: $white;
-    font-family: helveticaNeueCyr-Light;
-    font-size: rem(14px);
-}
+        .product-card {
+            background-color: $white;
+            padding-top: rem(10px);
+            z-index: 2999;
+        }
+        
+        .product-card__block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: rem(10px);
+        }
+        
+        .product-card__block-img {
+            background-image: url("../img/catalog/hb.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50% 50%;
+        }
+        
+        .product-card__block-desc__title {
+            color: $blue;
+            font-family: helveticaNeueCyr-Light;
+            font-size: rem(16px);
+            margin-bottom: rem(10px);
+        }
+        
+        .product-card__block-img {
+            width: 35%;
+            height: rem(180px);
+        }
+        
+        .product-card__block-desc {
+            width: 60%;
+        }
+        
+        .product-card__block-desc__list {
+            list-style: initial;
+            color: $blue;
+            margin-left: 2%;
+        }
+        
+        .menu-mobile__block-desc__item {
+            margin-bottom: rem(5px);
+            font-size: rem(12px);
+        }
+        
+        .product-card__block-desc__text {
+            font-family: HelveticaNeueCyr-Light;
+            font-size: rem(12px);
+        }
+        
+        .product-card__block-price {
+            padding: rem(10px);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .product-card__block-price__price {
+            width: 20%;
+            color: $blue;
+            font-family: HelveticaNeueCyr-light;
+            font-size: rem(20px);
+            text-align: left;
+            border-left: rem(2px) solid $green;
+            padding-left: rem(10px);
+            @include phones {
+                width: 30%;
+            }
+        }
+        
+        .product-card__block-price__title {
+            width: 80%;
+            color: $blue;
+            font-family: helveticaNeueCyr-Light;
+            font-size: rem(16px);
+            @include phones {
+                width: 70%;
+            }
+        }
+        
+        .product-card__block-description {
+            background-color: $blue;
+            padding: rem(10px);
+        }
+        
+        .product-card__block-description__text {
+            color: $white;
+            font-family: helveticaNeueCyr-Light;
+            font-size: rem(14px);
+        }
